@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>A:\as\GANVO\GANVO.apj</ApjFullFileName>
+    <ProjectName>GANVO</ProjectName>
+    <ActiveConfigurationName>labBR</ActiveConfigurationName>
+    <LicenseDataFolder>A:\as\GANVO\Temp\Objects\labBR\4PP065_0571_P74</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

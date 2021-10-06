@@ -1,0 +1,6 @@
+{
+  global:
+    FBX64Inverter;
+  local:
+    *;
+ };

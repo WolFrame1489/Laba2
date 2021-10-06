@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetOptions>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10map.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\acp10map.ncm" LastWriteTime="2021-09-15 15:30:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Acp10map.ncm&quot; -v V1.00.0 -a &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -Z &quot;mappView: 5.2.3, mappMotion: 5.2.1, mappCockpit: 5.2.1, mapp: 5.2.1, Acp10Arnc0: 5.2.1, mappControl: 5.2.0, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Acp10map.br&quot; -T SG4 -s &quot;labBR.4PP065_0571_P74.Motion&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10cfg.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\acp10cfg.ncc" LastWriteTime="2021-09-15 15:29:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\acp10map.ncm" LastWriteTime="2021-09-15 15:30:40" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Acp10cfg.ncc&quot; -a &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot; -m &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Acp10map.ncm&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -Z &quot;mappView: 5.2.3, mappMotion: 5.2.1, mappCockpit: 5.2.1, mapp: 5.2.1, Acp10Arnc0: 5.2.1, mappControl: 5.2.0, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\acp10cfg.br&quot; -T SG4 -s &quot;labBR.4PP065_0571_P74.Motion&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0cfg.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\arnc0cfg.ncc" LastWriteTime="2021-09-15 14:57:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\arnc0map.ncm" LastWriteTime="2021-09-15 14:57:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Arnc0cfg.ncc&quot; -a &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot; -m &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Arnc0map.ncm&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -Z &quot;mappView: 5.2.3, mappMotion: 5.2.1, mappCockpit: 5.2.1, mapp: 5.2.1, Acp10Arnc0: 5.2.1, mappControl: 5.2.0, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\arnc0cfg.br&quot; -T SG4 -s &quot;labBR.4PP065_0571_P74.Motion&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0map.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\arnc0map.ncm" LastWriteTime="2021-09-15 14:57:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Arnc0map.ncm&quot; -v V1.00.0 -a &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -Z &quot;mappView: 5.2.3, mappMotion: 5.2.1, mappCockpit: 5.2.1, mapp: 5.2.1, Acp10Arnc0: 5.2.1, mappControl: 5.2.0, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Arnc0map.br&quot; -T SG4 -s &quot;labBR.4PP065_0571_P74.Motion&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\iomap.iom" LastWriteTime="2021-09-15 15:30:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\pvmap.vvm" LastWriteTime="2021-09-15 14:55:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\channelconfiguration.xml" LastWriteTime="2021-09-15 15:39:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.sw" LastWriteTime="2021-09-21 15:05:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\PvMap.vvm&quot; -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\iomap.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR.4PP065_0571_P74&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ashwac.br&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Acp10sdc: V5.02.1, Arnc0man: V5.02.1, AsArLog: V*, AsArProf: V*, AsBrStr: V*, AsIecCon: V*, AsMem: V*, astime: V*, brsystem: V*, DataObj: V*, FileIO: V*, GateCtrl: V*, NcGlobal: V5.02.1, operator: V*, runtime: V*, sys_lib: V*, X64Lib: V*&quot; -c &quot;labBR&quot; -Z &quot;Acp10Arnc0: 5.2.1, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -M IA32 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -c &quot;labBR&quot; -sysconf -S &quot;4PP065_0571_P74&quot; -F 1.10 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\sysconf.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <Prerequisite ID="a:\as\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\asfw.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; -zip -s &quot;labBR&quot; -firmware -F 1.10 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <Prerequisite ID="a:\as\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ashwd.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; -zip -s &quot;labBR&quot; -hwd -F 1.10 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\iomap.iom" LastWriteTime="2021-09-15 15:30:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-09-15 15:50:44" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -arconfig -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -c &quot;labBR&quot; -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -F 1.10 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10sys.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\motion\acp10sys.br" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Motion\Acp10sys.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Acp10sys.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0sys.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\arnc0man\sg4\arnc0sys.br" LastWriteTime="2018-03-06 10:14:16" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Arnc0man\SG4\Arnc0sys.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Arnc0sys.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\udbdef.br">
+    <Prerequisite ID="a:\as\as45\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS45\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\udbdef.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.imx">
+    <Prerequisite ID="a:\as\as45\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.imx&quot; -c &quot;A:\as\AS45\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;A:\as\AS\System\D0452&quot; &quot;A:\as\AS45\AS\TechnologyPackages\Acp10Arnc0\5.2.1&quot; &quot;A:\as\AS45\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.imx" LastWriteTime="2021-09-15 15:39:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.s18d" LastWriteTime="2021-09-15 15:39:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\accessandsecurity\userrolesystem\role.role" LastWriteTime="2021-09-15 14:55:18" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Role.br&quot; -zip -B D4.52 -F 1.10 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\accessandsecurity\userrolesystem\user.user" LastWriteTime="2021-09-15 14:55:18" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\User.br&quot; -zip -B D4.52 -F 1.10 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrl.ox" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.per" LastWriteTime="2021-09-15 14:55:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-09-15 14:57:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrl.var" LastWriteTime="2021-09-15 15:33:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.var" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\acp10man.typ" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic1 -p 2 -s &quot;ncsdcctrl&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Acp10sdc: V5.02.1, Arnc0man: V5.02.1, AsArLog: V*, AsArProf: V*, AsBrStr: V*, AsIecCon: V*, AsMem: V*, astime: V*, brsystem: V*, DataObj: V*, FileIO: V*, GateCtrl: V*, NcGlobal: V5.02.1, operator: V*, runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrl.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\a.out" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-09-15 14:57:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrl.var" LastWriteTime="2021-09-15 15:33:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.var" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\acp10man.typ" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrl.ox&quot; -T SG4 -r Cyclic1 -G V4.1.2  -B D4.52 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrlcyclic.st.o" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrlinit.st.o" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\_bur_pvdef.st.o" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-09-15 14:57:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrl.var" LastWriteTime="2021-09-15 15:33:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.var" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\acp10man.typ" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrlCyclic.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrlInit.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\SG4\IA32\libacp10_mc.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libbrsystem.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsMem.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsArProf.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libFileIO.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsArLog.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libDataObj.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsBrStr.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\SG4\IA32\libncglobal.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrlcyclic.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrlcyclic.st" LastWriteTime="2021-09-15 15:30:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-09-15 14:57:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrl.var" LastWriteTime="2021-09-15 15:33:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.var" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\acp10man.typ" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrlCyclic.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrlCyclic.st.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;ncsdcctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrl.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrl.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10man\Acp10man.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\acp10sdc.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Arnc0man\arnc0man.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\GateCtrl.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10par\Acp10par.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\acp10sdc.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\Constants.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrlinit.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrlinit.st" LastWriteTime="2021-09-15 15:30:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-09-15 14:57:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrl.var" LastWriteTime="2021-09-15 15:33:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.var" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\acp10man.typ" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrlInit.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrlInit.st.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;ncsdcctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrl.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrl.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10man\Acp10man.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\acp10sdc.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Arnc0man\arnc0man.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\GateCtrl.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10par\Acp10par.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\acp10sdc.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\Constants.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\_bur_pvdef.st.o">
+    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrlcyclic.st.o" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl\ncsdcctrlinit.st.o" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-09-15 14:57:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-09-29 15:50:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.typ" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ncsdcctrl\ncsdcctrl.var" LastWriteTime="2021-09-15 15:33:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\acp10sdc.var" LastWriteTime="2021-09-15 14:57:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\acp10man.typ" LastWriteTime="2021-09-15 14:57:30" />
+    <CommandLine Parameter="&quot;A:\as\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\_bur_pvdef.st.o&quot; -S &quot;ncsdcctrlCyclic.st&quot; &quot;ncsdcctrlInit.st&quot;  -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;ncsdcctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrl.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\ncsdcctrl\ncsdcctrl.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10man\Acp10man.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\acp10sdc.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Arnc0man\arnc0man.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\GateCtrl.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10par\Acp10par.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\NcGlobal.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\acp10sdc.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\DataObj\DataObj.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArLog\AsArLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsArProf\AsArProf.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsMem\AsMem.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\acp10_mc.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\X64Lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\Constants.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10man.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10man\sg4\ia32\acp10man.br" LastWriteTime="2018-03-07 14:19:44" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10man\SG4\IA32\acp10man.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\acp10man.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10par.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10par\sg4\ia32\acp10par.br" LastWriteTime="2018-03-07 14:20:08" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10par\SG4\IA32\acp10par.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\acp10par.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncglobal.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\ncglobal\sg4\ia32\ncglobal.br" LastWriteTime="2018-03-07 14:19:06" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\SG4\IA32\ncglobal.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ncglobal.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10sdc.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10sdc\sg4\ia32\acp10sdc.br" LastWriteTime="2018-03-05 14:28:32" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10sdc\SG4\IA32\acp10sdc.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\acp10sdc.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0man.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\arnc0man\sg4\ia32\arnc0man.br" LastWriteTime="2018-03-06 10:14:14" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Arnc0man\SG4\IA32\arnc0man.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\arnc0man.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\dataobj.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\dataobj.br" LastWriteTime="2018-12-06 02:00:50" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\DataObj.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DataObj.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asarlog.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\asarlog.br" LastWriteTime="2018-12-06 02:00:38" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\AsArLog.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\AsArLog.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sys_lib.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\sys_lib.br" LastWriteTime="2018-12-06 02:00:52" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\sys_lib.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\sys_lib.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\fileio.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\fileio.br" LastWriteTime="2018-12-06 02:00:50" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\FileIO.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\FileIO.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asarprof.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\asarprof.br" LastWriteTime="2018-12-06 02:00:38" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\AsArProf.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\AsArProf.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asmem.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\asmem.br" LastWriteTime="2018-12-06 02:00:44" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\AsMem.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\AsMem.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\brsystem.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\brsystem.br" LastWriteTime="2018-12-06 02:00:48" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\brsystem.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\brsystem.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\runtime.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\runtime.br" LastWriteTime="2018-12-06 02:00:52" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\runtime.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\runtime.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\astime.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\astime.br" LastWriteTime="2018-12-06 02:00:48" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\astime.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\astime.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10_mc.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\acp10_mc\sg4\ia32\acp10_mc.br" LastWriteTime="2018-03-05 10:09:38" />
+    <CommandLine Parameter="/c copy /B /Y &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\SG4\IA32\acp10_mc.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\acp10_mc.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asbrstr.br">
+    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\asbrstr.br" LastWriteTime="2018-12-06 02:00:40" />
+    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\AsBrStr.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\AsBrStr.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\x64lib.ox" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\ansic.lby" LastWriteTime="2021-09-21 14:57:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-09-21 14:57:28" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\X64Lib.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -r Library -s &quot;Libraries.X64Lib&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Acp10sdc: V5.02.1, Arnc0man: V5.02.1, AsArLog: V*, AsArProf: V*, AsBrStr: V*, AsIecCon: V*, AsMem: V*, astime: V*, brsystem: V*, DataObj: V*, FileIO: V*, GateCtrl: V*, NcGlobal: V5.02.1, operator: V*, runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\x64lib.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\a.out" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-09-21 14:57:28" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\X64Lib.ox&quot; -T SG4 -r Library -G V4.1.2  -B D4.52 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\fbx64inverter.c.o" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-09-21 14:57:28" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\FBX64Inverter.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\SG4\IA32\libacp10_mc.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libbrsystem.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsMem.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsArProf.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libFileIO.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsArLog.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libDataObj.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsBrStr.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\SG4\IA32\libncglobal.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\fbx64inverter.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\fbx64inverter.c" LastWriteTime="2021-09-21 14:57:28" />
+    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\x64lib.h" LastWriteTime="2021-10-06 16:42:12" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\FBX64Inverter.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\FBX64Inverter.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Libraries.X64Lib&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\X64Lib&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -D _X64LIB_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox" LastWriteTime="2021-10-06 16:45:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\ansic.lby" LastWriteTime="2021-09-21 15:07:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\GateCtrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -r Library -s &quot;Libraries.GateCtrl&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Acp10sdc: V5.02.1, Arnc0man: V5.02.1, AsArLog: V*, AsArProf: V*, AsBrStr: V*, AsIecCon: V*, AsMem: V*, astime: V*, brsystem: V*, DataObj: V*, FileIO: V*, GateCtrl: V*, NcGlobal: V5.02.1, operator: V*, runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out" LastWriteTime="2021-10-06 16:45:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\GateCtrl.ox&quot; -T SG4 -r Library -G V4.1.2  -B D4.52 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o" LastWriteTime="2021-10-06 16:45:26" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\FBGate.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\Acp10_MC\SG4\IA32\libacp10_mc.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libbrsystem.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsMem.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsArProf.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libFileIO.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsArLog.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libDataObj.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsBrStr.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Logical\Libraries\NcGlobal\SG4\IA32\libncglobal.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\fbgate.c" LastWriteTime="2021-10-06 16:45:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\FBGate.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\FBGate.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Libraries.GateCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\GateCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -D _GATECTRL_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10etxen.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\acp10etxen\acp10etxen.ett" LastWriteTime="2021-09-15 14:57:42" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\acp10etxen\acp10etxen.ett&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\acp10etxen.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;acp10etxen&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipvar.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipvar\gmcipvar.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipvar\gmcipvar.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipvar.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipvar&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipfun.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipfun\gmcipfun.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipfun\gmcipfun.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipfun.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipfun&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipfub.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipfub\gmcipfub.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipfub\gmcipfub.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipfub.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipfub&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipubr.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipubr\gmcipubr.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipubr\gmcipubr.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipubr.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipubr&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipusm.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipusm\gmcipusm.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipusm\gmcipusm.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipusm.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipusm&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipui.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipui\gmcipui.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipui\gmcipui.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipui.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipui&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipus.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipus\gmcipus.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipus\gmcipus.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipus.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipus&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipuc.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipuserconfig\gmcipuc\gmcipuc.cnc" LastWriteTime="2018-03-06 11:15:26" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpUserConfig\gmcipuc\gmcipuc.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipuc.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpUserConfig.gmcipuc&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipsys.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipsys\gmcipsys.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipsys\gmcipsys.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipsys.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipsys&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmciplbr.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmciplbr\gmciplbr.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmciplbr\gmciplbr.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmciplbr.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmciplbr&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipcbr.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipcbr\gmcipcbr.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipcbr\gmcipcbr.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipcbr.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipcbr&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmciplsm.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmciplsm\gmciplsm.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmciplsm\gmciplsm.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmciplsm.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmciplsm&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipcsm.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipcsm\gmcipcsm.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipcsm\gmcipcsm.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipcsm.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipcsm&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipcfg.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipcfg\gmcipcfg.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipcfg\gmcipcfg.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipcfg.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipcfg&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipiec.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipiec\gmcipiec.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipiec\gmcipiec.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipiec.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipiec&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmciplog.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmciplog\gmciplog.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmciplog\gmciplog.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmciplog.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmciplog&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipesm.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipesm\gmcipesm.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipesm\gmcipesm.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipesm.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipesm&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipmxd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipmxd\gmcipmxd.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipmxd\gmcipmxd.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipmxd.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipmxd&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipmx.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gmcipconfig\gmcipmx\gmcipmx.cnc" LastWriteTime="2018-03-06 11:15:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GmcIpConfig\gmcipmx\gmcipmx.cnc&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gmcipmx.br&quot; -T SG4 -B D4.52 -v V5.02.1 -s &quot;GmcIpConfig.gmcipmx&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis01a.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis01obj\gaxis01a\gaxis01a.apt" LastWriteTime="2021-09-15 14:57:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis01obj\gAxis01a\gAxis01a.apt&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis01a.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis01obj.gAxis01a&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis01i.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis01obj\gaxis01i\gaxis01i.ax" LastWriteTime="2021-09-15 14:57:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis01obj\gAxis01i\gAxis01i.ax&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis01i.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis01obj.gAxis01i&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis02a.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis02obj\gaxis02a\gaxis02a.apt" LastWriteTime="2021-09-15 15:29:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis02obj\gAxis02a\gAxis02a.apt&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis02a.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis02obj.gAxis02a&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis02i.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis02obj\gaxis02i\gaxis02i.ax" LastWriteTime="2021-09-15 15:29:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis02obj\gAxis02i\gAxis02i.ax&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis02i.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis02obj.gAxis02i&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis03a.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis03obj\gaxis03a\gaxis03a.apt" LastWriteTime="2021-09-15 15:29:40" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis03obj\gAxis03a\gAxis03a.apt&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis03a.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis03obj.gAxis03a&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis03i.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis03obj\gaxis03i\gaxis03i.ax" LastWriteTime="2021-09-15 15:29:42" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis03obj\gAxis03i\gAxis03i.ax&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis03i.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis03obj.gAxis03i&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis04a.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis04obj\gaxis04a\gaxis04a.apt" LastWriteTime="2021-09-15 15:29:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis04obj\gAxis04a\gAxis04a.apt&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis04a.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis04obj.gAxis04a&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis04i.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis04obj\gaxis04i\gaxis04i.ax" LastWriteTime="2021-09-15 15:29:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis04obj\gAxis04i\gAxis04i.ax&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis04i.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis04obj.gAxis04i&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis05a.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis05obj\gaxis05a\gaxis05a.apt" LastWriteTime="2021-09-15 15:30:42" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis05obj\gAxis05a\gAxis05a.apt&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis05a.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis05obj.gAxis05a&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis05i.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\gaxis05obj\gaxis05i\gaxis05i.ax" LastWriteTime="2021-09-15 15:30:42" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\gAxis05obj\gAxis05i\gAxis05i.ax&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\gAxis05i.br&quot; -T SG4 -B D4.52 -v V1.00.0 -s &quot;gAxis05obj.gAxis05i&quot; -L &quot;Acp10_MC: V5.02.1, Acp10man: V5.02.1, Acp10par: V5.02.1, Arnc0man: V5.02.1, NcGlobal: V5.02.1&quot; -warmRestart -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\labbr\4pp065_0571_p74\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10map.br" LastWriteTime="2021-09-15 15:39:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10cfg.br" LastWriteTime="2021-09-15 15:39:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0cfg.br" LastWriteTime="2021-09-15 15:39:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0map.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\iomap.br" LastWriteTime="2021-09-15 15:39:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwac.br" LastWriteTime="2021-09-15 15:39:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sysconf.br" LastWriteTime="2021-10-06 16:42:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asfw.br" LastWriteTime="2021-09-15 15:39:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwd.br" LastWriteTime="2021-09-15 15:39:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arconfig.br" LastWriteTime="2021-09-15 15:39:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10sys.br" LastWriteTime="2021-09-15 14:57:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0sys.br" LastWriteTime="2018-03-06 10:14:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\role.br" LastWriteTime="2021-09-15 15:39:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\user.br" LastWriteTime="2021-09-15 15:39:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncsdcctrl.br" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10man.br" LastWriteTime="2018-03-07 14:19:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10par.br" LastWriteTime="2018-03-07 14:20:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ncglobal.br" LastWriteTime="2018-03-07 14:19:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10sdc.br" LastWriteTime="2018-03-05 14:28:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arnc0man.br" LastWriteTime="2018-03-06 10:14:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\dataobj.br" LastWriteTime="2018-12-06 02:00:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asarlog.br" LastWriteTime="2018-12-06 02:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sys_lib.br" LastWriteTime="2018-12-06 02:00:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\fileio.br" LastWriteTime="2018-12-06 02:00:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asarprof.br" LastWriteTime="2018-12-06 02:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asmem.br" LastWriteTime="2018-12-06 02:00:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\brsystem.br" LastWriteTime="2018-12-06 02:00:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\runtime.br" LastWriteTime="2018-12-06 02:00:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\astime.br" LastWriteTime="2018-12-06 02:00:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10_mc.br" LastWriteTime="2018-03-05 10:09:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asbrstr.br" LastWriteTime="2018-12-06 02:00:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib.br" LastWriteTime="2021-10-06 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br" LastWriteTime="2021-10-06 16:45:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\acp10etxen.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipvar.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipfun.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipfub.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipubr.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipusm.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipui.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipus.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipuc.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipsys.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmciplbr.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipcbr.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmciplsm.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipcsm.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipcfg.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipiec.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmciplog.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipesm.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipmxd.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gmcipmx.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis01a.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis01i.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis02a.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis02i.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis03a.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis03i.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis04a.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis04i.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis05a.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gaxis05i.br" LastWriteTime="2021-09-15 15:39:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.sw" LastWriteTime="2021-09-21 15:05:50" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\GANVO.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;labBR&quot; -i &quot;A:\as\AS45&quot; -S &quot;4PP065_0571_P74&quot; -A &quot;PP065&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Cpu.sw&quot; -Z &quot;Acp10Arnc0: 5.2.1, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

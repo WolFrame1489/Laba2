@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=?>
+<NcMapping NcSwId="Acp10">
+  <NcObject Name="gAxis01" ModuleId="X20SM1436" ModuleAddress="SDC_IF1.ST1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis01i" AcoposParameter="gAxis01a" AdditionalData="CNC_Enabled=&quot;1&quot; " Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis02" ModuleId="X20SM1436a" ModuleAddress="SDC_IF1.ST2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis02i" AcoposParameter="gAxis02a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis03" ModuleId="8I64xxxxxxx.00x-1" ModuleAddress="SDC_IF1.ST3" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis03i" AcoposParameter="gAxis03a" AdditionalData="CNC_Enabled=&quot;1&quot; " Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis04" ModuleId="X20SM1436b" ModuleAddress="SDC_IF1.ST4" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis04i" AcoposParameter="gAxis04a" AdditionalData="CNC_Enabled=&quot;1&quot; " Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis05" ModuleId="X20SM1436c" ModuleAddress="SDC_IF1.ST5" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis05i" AcoposParameter="gAxis05a" Disabled="FALSE" ModuleDisabled="FALSE" />
+</NcMapping>
