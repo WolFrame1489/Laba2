@@ -2,86 +2,20 @@
 <?AutomationStudio Version="4.5.2.102"?>
 <LibraryInfos>
   <Library
-    Name="Acp10_MC"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="5.02.1" />
-  <Library
-    Name="Acp10man"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="5.02.1" />
-  <Library
-    Name="Acp10par"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="5.02.1" />
-  <Library
-    Name="Acp10sdc"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="5.02.1" />
-  <Library
-    Name="Arnc0man"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="5.02.1" />
-  <Library
-    Name="AsArLog"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="" />
-  <Library
-    Name="AsArProf"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="" />
-  <Library
-    Name="AsBrStr"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="" />
-  <Library
     Name="AsIecCon"
     IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
   <Library
-    Name="AsMem"
+    Name="asstring"
     IsDeployed="true"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
   <Library
     Name="astime"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="" />
-  <Library
-    Name="brsystem"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="" />
-  <Library
-    Name="DataObj"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="" />
-  <Library
-    Name="FileIO"
-    IsDeployed="true"
+    IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
@@ -92,19 +26,13 @@
     UseAsStatic="false"
     Version="" />
   <Library
-    Name="NcGlobal"
-    IsDeployed="true"
-    IsStatic="false"
-    UseAsStatic="false"
-    Version="5.02.1" />
-  <Library
-    Name="operator"
+    Name="Operator"
     IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />
   <Library
-    Name="runtime"
+    Name="Runtime"
     IsDeployed="true"
     IsStatic="false"
     UseAsStatic="false"

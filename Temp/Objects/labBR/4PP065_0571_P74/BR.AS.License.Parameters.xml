@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Parameters>
   <Connection>
-    <DeviceParameters>/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0</DeviceParameters>
-    <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=2</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=* /SDT=5 /DAIP=10.1.1.13 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>A:\as\GANVO\GANVO.apj</ApjFullFileName>
-    <ProjectName>GANVO</ProjectName>
+    <ApjFullFileName>A:\as\LRlab23i\DriveControl.apj</ApjFullFileName>
+    <ProjectName>DriveControl</ProjectName>
     <ActiveConfigurationName>labBR</ActiveConfigurationName>
-    <LicenseDataFolder>A:\as\GANVO\Temp\Objects\labBR\4PP065_0571_P74</LicenseDataFolder>
+    <LicenseDataFolder>A:\as\LRlab23i\Temp\Objects\labBR\4PP065_0571_P74</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

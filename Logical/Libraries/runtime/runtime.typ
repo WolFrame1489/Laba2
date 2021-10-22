@@ -1,3 +1,12 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Library: runtime
+ * File: runtime.typ
+ * Author: B+R
+ ********************************************************************
+ * Data types of library runtime
+ ********************************************************************)
 
 TYPE
 	SFCActionType : STRUCT			(*internal use*)
@@ -139,9 +148,9 @@ TYPE
 		DoneRef			: UDINT;
 		ErrorRef		: UDINT;
 		ActiveRef		: UDINT;
-		StatusRef		: UDINT;
+		FBInit			: UDINT;
 		FBCyclic		: UDINT;
-		AsyfumaState		: UDINT;
+		FBCleanup		: UDINT;
 		FBResetOut		: UDINT;
 		Argument		: UDINT;
 		State			: UDINT;

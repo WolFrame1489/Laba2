@@ -1,0 +1,5 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/GateCtrl/GateCtrl.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/GateCtrl/Types.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/X64Lib/X64Lib.fun
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/DoorCtrl/Variables.var

@@ -3,3 +3,4 @@ $(AS_PROJECT_PATH)/logical/libraries/gatectrl/fbgate.c
 $(AS_GNU_INST_PATH)/i386-elf/include/bur/plctypes.h
 $(AS_GNU_INST_PATH)/i386-elf/include/bur/plc.h
 $(AS_TEMP_PATH)/includes/gatectrl.h
+$(AS_TEMP_PATH)/includes/x64lib.h

@@ -68,6 +68,75 @@
 <LN ID="%IB.IF5.NodeSwitch" Type="USINT">
 <Prod Device="$root" DPName="IF5.NodeSwitch" Kind="io"/>
 </LN>
+<LN ID="%IX.IF4.ST1.ModuleOk" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%ID.IF4.ST1.SerialNumber" Type="UDINT">
+<Prod Device="IF4.ST1" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%ID.IF4.ST1.ModuleID" Type="UDINT">
+<Prod Device="IF4.ST1" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%ID.IF4.ST1.HardwareVariant" Type="UDINT">
+<Prod Device="IF4.ST1" DPName="HardwareVariant" Kind="io"/>
+</LN>
+<LN ID="%ID.IF4.ST1.FirmwareVersion" Type="UDINT">
+<Prod Device="IF4.ST1" DPName="FirmwareVersion" Kind="io"/>
+</LN>
+<LN ID="%ID.IF4.ST1.UDID_low" Type="UDINT">
+<Prod Device="IF4.ST1" DPName="UDID_low" Kind="io"/>
+</LN>
+<LN ID="%IW.IF4.ST1.UDID_high" Type="UINT">
+<Prod Device="IF4.ST1" DPName="UDID_high" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL101" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL101" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL102" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL102" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL103" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL103" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL104" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL104" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL105" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL105" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL106" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL106" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL107" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL107" Kind="io"/>
+</LN>
+<LN ID="%QX.IF4.ST1.BOOL108" Type="BOOL">
+<Cons Device="IF4.ST1" DPName="BOOL108" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL001" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL001" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL002" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL002" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL003" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL003" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL004" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL004" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL005" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL005" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL006" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL006" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL007" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL007" Kind="io"/>
+</LN>
+<LN ID="%IX.IF4.ST1.BOOL008" Type="BOOL">
+<Prod Device="IF4.ST1" DPName="BOOL008" Kind="io"/>
+</LN>
 <LN ID="%IX.IF4.ST2.ModuleOk" Type="BOOL">
 <Prod Device="IF4.ST2" DPName="ModuleOk" Kind="io"/>
 </LN>
@@ -214,29 +283,20 @@
 </LN>
 <LN ID="%IB.IF4.ST2.IF1.ST2.LifeCnt" Type="SINT">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="LifeCnt" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_DrvIf.iLifeCnt" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_DiDoIf.iLifeCntDriveEnable" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_DiDoIf.iLifeCntDriveReady" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_EncIf1.iLifeCnt" Kind="pv"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST2.SetTime01" Type="INT">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis04_DrvIf.oSetTime" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST2" DPName="SetTime01" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST2.Motor1Step0" Type="INT">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis04_MotorStep0" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST2" DPName="Motor1Step0" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST2.DriveEnable01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis04_DiDoIf.oDriveEnable" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST2" DPName="DriveEnable01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST2.BoostCurrent01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis04_DrvIf.oBoostCurrent" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST2" DPName="BoostCurrent01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST2.StandstillCurrent01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis04_DrvIf.oStandStillCurrent" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST2" DPName="StandstillCurrent01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST2.ClearError01" Type="BOOL">
@@ -244,8 +304,6 @@
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST2.DrvOk01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="DrvOk01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_DrvIf.iDrvOK" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_DiDoIf.iDriveReady" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST2.StallError01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="StallError01" Kind="io"/>
@@ -261,23 +319,18 @@
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST2.ActPos01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="ActPos01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_EncIf1.iActPos" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST2.RefPulsePos01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="RefPulsePos01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_EncIf1.iRefPulsePos" Kind="pv"/>
 </LN>
 <LN ID="%IB.IF4.ST2.IF1.ST2.RefPulseCnt01" Type="SINT">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="RefPulseCnt01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_EncIf1.iRefPulseCnt" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST2.EncOk01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="EncOk01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_EncIf1.iEncOK" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST2.ActTime01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="ActTime01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis04_EncIf1.iActTime" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST2.TriggerTime01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST2" DPName="TriggerTime01" Kind="io"/>
@@ -359,29 +412,20 @@
 </LN>
 <LN ID="%IB.IF4.ST2.IF1.ST3.LifeCnt" Type="SINT">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="LifeCnt" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_DrvIf.iLifeCnt" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_DiDoIf.iLifeCntDriveEnable" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_DiDoIf.iLifeCntDriveReady" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_EncIf1.iLifeCnt" Kind="pv"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST3.SetTime01" Type="INT">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis05_DrvIf.oSetTime" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST3" DPName="SetTime01" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST3.Motor1Step0" Type="INT">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis05_MotorStep0" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST3" DPName="Motor1Step0" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST3.DriveEnable01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis05_DiDoIf.oDriveEnable" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST3" DPName="DriveEnable01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST3.BoostCurrent01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis05_DrvIf.oBoostCurrent" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST3" DPName="BoostCurrent01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST3.StandstillCurrent01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="gAxis05_DrvIf.oStandStillCurrent" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST3" DPName="StandstillCurrent01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST3.ClearError01" Type="BOOL">
@@ -389,8 +433,6 @@
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST3.DrvOk01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="DrvOk01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_DrvIf.iDrvOK" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_DiDoIf.iDriveReady" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST3.StallError01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="StallError01" Kind="io"/>
@@ -406,23 +448,18 @@
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST3.ActPos01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="ActPos01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_EncIf1.iActPos" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST3.RefPulsePos01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="RefPulsePos01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_EncIf1.iRefPulsePos" Kind="pv"/>
 </LN>
 <LN ID="%IB.IF4.ST2.IF1.ST3.RefPulseCnt01" Type="SINT">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="RefPulseCnt01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_EncIf1.iRefPulseCnt" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST3.EncOk01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="EncOk01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_EncIf1.iEncOK" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST3.ActTime01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="ActTime01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="gAxis05_EncIf1.iActTime" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST3.TriggerTime01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST3" DPName="TriggerTime01" Kind="io"/>

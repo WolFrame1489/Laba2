@@ -2,4 +2,7 @@ VAR
 	Close : BOOL;
 	Open : BOOL;
 	DoorBlock : FBGate;
+	ETAD : UINT := 0;
+	Speed : INT := 0;
+	CMD : UINT := 0;
 END_VAR

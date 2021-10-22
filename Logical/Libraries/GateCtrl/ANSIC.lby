@@ -7,4 +7,7 @@
     <File Description="Exported functions and function blocks">GateCtrl.fun</File>
     <File>FBGate.c</File>
   </Files>
+  <Dependencies>
+    <Dependency ObjectName="X64Lib" />
+  </Dependencies>
 </Library>

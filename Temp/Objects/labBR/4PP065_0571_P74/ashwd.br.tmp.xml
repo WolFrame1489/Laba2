@@ -1,6 +1,96 @@
 <?xml version="1.0"?>
 <?hwc2hwd version="1.1"?>
 <HWD Version="2.0" xmlns="http://br-automation.com/AR/IO/HWD">
+  <Hardware Family="10" ID="X20SL8000" Modno="7616" UseType="3">
+    <Parameter ID="UseType" Value="6" Type="UDINT" />
+    <Parameter ID="NeededBus" Value="PL" />
+    <Parameter ID="CompatibleCode" Value="PowerlinkStation" />
+    <Parameter ID="RemoteUpdate" Value="1" Type="UDINT" />
+    <Parameter ID="Classcode" Value="0x20000014" Type="UDINT" />
+    <Parameter ID="VendorId" Value="0x0100006C" Type="UDINT" />
+    <Parameter ID="EPL_ParamStrategy" Value="Store" />
+    <Parameter ID="EPL_ResetToDefault" Value="on" />
+    <Parameter ID="IOSuffix" Value=":IO" />
+    <Parameter ID="EPL_SDOWriteMultiple" Value="on" />
+    <Parameter ID="EPL_FwVersionInExt1" Value="1" />
+    <Parameter ID="EPL_MinRedCycleTime" Value="400" Type="UDINT" />
+    <Parameter ID="EPL_ApplSwUpdate" Value="1" Type="UDINT" />
+    <Parameter ID="EPL_ApplSwVerify" Value="1" Type="UDINT" />
+    <Parameter ID="EPL_CfgVerify" Value="1" Type="UDINT" />
+    <Parameter ID="EPL_DeviceType" Value="0x00000000" Type="UDINT" />
+    <Parameter ID="EPL_BootTimeNotActive" Value="40000000" Type="UDINT" />
+    <Parameter ID="SProxyClient" Value="/FRAMENUMB=60 /FRAMESIZE=268" />
+    <Parameter ID="SProxyServer" Value="/FRAMENUMB=60 /FRAMESIZE=268" />
+    <Parameter ID="SProxyConnection" Value="/CONNMAX=1 /TIMEOUT=15" />
+    <Resource ID="IO">
+      <Channel ID="ModuleOk">
+        <Parameter ID="Ext" Value="/OK" />
+        <Parameter ID="Address" Value="0" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="BOOL" />
+      </Channel>
+      <Channel ID="SerialNumber">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x00041018" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+      <Channel ID="ModuleID">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x00021018" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+      <Channel ID="HardwareVariant">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x00031018" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+      <Channel ID="FirmwareVersion">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x00012000" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+      <Channel ID="UDID_low">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x00062000" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+      <Channel ID="UDID_high">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x00072000" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="Authorisation">
+        <Filter Value="IS_RUNTIME='1'" />
+        <Parameter ID="Ext" Value="/NOTCYCLIC" />
+        <Parameter ID="Address" Value="0x00012402" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+    </Resource>
+    <Resource ID="SSDO">
+      <Parameter ID="Classcode" Value="0x200000ff" Type="UDINT" />
+      <Parameter ID="DDriverName" Value="DdxxIoSSDO" />
+      <Parameter ID="AsynResource" Value="1" Type="UDINT" />
+      <Parameter ID="ARIOMaster" Value="1" Type="UDINT" />
+      <Parameter ID="Transparent" Value="1" Type="UDINT" />
+      <Parameter ID="ChannelId" Value="128" Type="UDINT" />
+    </Resource>
+    <Resource ID="SLOG">
+      <Parameter ID="Classcode" Value="0x200000ff" Type="UDINT" />
+      <Parameter ID="DDriverName" Value="DdxxIoSafetyLogger" />
+      <Parameter ID="AsynResource" Value="1" Type="UDINT" />
+      <Parameter ID="ARIOMaster" Value="1" Type="UDINT" />
+      <Parameter ID="Transparent" Value="1" Type="UDINT" />
+      <Parameter ID="ChannelId" Value="0x012403" Type="UDINT" />
+    </Resource>
+    <Parameter ID="InitScript" Value="if (Authorisation==&quot;disabled&quot;) { write(Authorisation, 0x41444953);} if (Authorisation==&quot;enabled&quot;) { write(Authorisation, 0x41454E41);}" />
+  </Hardware>
   <Hardware Family="10" ID="X20BC0083" Modno="7966" UseType="3">
     <Parameter ID="UseType" Value="6" Type="UDINT" />
     <Parameter ID="NeededBus" Value="PL" />
@@ -4082,7 +4172,6 @@
         <Parameter ID="BitOffset" Value="0" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="PhysicalStateChannel2" CrossLink="true">
         <Parameter ID="Ext" Value="/SUB=PDOi" />
@@ -4090,7 +4179,6 @@
         <Parameter ID="BitOffset" Value="1" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="PhysicalStateChannel3" CrossLink="true">
         <Parameter ID="Ext" Value="/SUB=PDOi" />
@@ -4098,7 +4186,6 @@
         <Parameter ID="BitOffset" Value="2" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="PhysicalStateChannel4" CrossLink="true">
         <Parameter ID="Ext" Value="/SUB=PDOi" />
@@ -4106,7 +4193,6 @@
         <Parameter ID="BitOffset" Value="3" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="CurrentOK01" CrossLink="true">
         <Filter Value="ErrorInfo='on'" />
@@ -4115,7 +4201,6 @@
         <Parameter ID="BitOffset" Value="4" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="CurrentOK02" CrossLink="true">
         <Filter Value="ErrorInfo='on'" />
@@ -4124,7 +4209,6 @@
         <Parameter ID="BitOffset" Value="5" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="CurrentOK03" CrossLink="true">
         <Filter Value="ErrorInfo='on'" />
@@ -4133,7 +4217,6 @@
         <Parameter ID="BitOffset" Value="6" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="CurrentOK04" CrossLink="true">
         <Filter Value="ErrorInfo='on'" />
@@ -4142,7 +4225,6 @@
         <Parameter ID="BitOffset" Value="7" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
-        <Parameter ID="Group" Value="General" />
       </Channel>
       <Channel ID="FBK_Status_1">
         <Filter Value="PLCopenInfo='on'" />
@@ -4486,7 +4568,7 @@
     <Parameter ID="RemoteUpdate" Type="UDINT" Value="1" />
     <Resource ID="IO">
       <Parameter ID="Classcode" Value="0x2000000d" Type="UDINT" />
-      <Parameter ID="InitScript" Value="&#xD;&#xA;				if (DownloadParameters==&quot;no&quot;){}else{&#xD;&#xA;					if (DownloadParameters==&quot;onChange&quot;){&#xD;&#xA;						write(EnableConfigAtChange01,0x01);&#xD;&#xA;					}&#xD;&#xA;					write(CMI_Output_Async, 0);&#xD;&#xA;					write(CMI_Output_Async, 1);&#xD;&#xA;						                                write (LAC_Output,  LAC);&#xD;&#xA;						if(@TCC) {if (TCC==0)    {}else{write (TCC_Output,  TCC);}}&#xD;&#xA;						                                write (BFR_Output,  BFR);&#xD;&#xA;						if(@FRS) {if (FRS==500)  {}else{write (FRS_Output,  FRS);}}&#xD;&#xA;					write(CMI_Output_Async, 32768);&#xD;&#xA;						                                write (FR1_Output,  FR1);&#xD;&#xA;						                                write (CD1_Output,  CD1);&#xD;&#xA;						                                write (CD2_Output,  CD2);&#xD;&#xA;						                                write(FLOC_Output, FLOC);&#xD;&#xA;						                                write (SA2_Output,  SA2);&#xD;&#xA;						                                write (COD_Output,  COD);&#xD;&#xA;						          if (COD==0)    {}else{write (COD_Output,    1);}&#xD;&#xA;						                                write (CMD_Output,  128);&#xD;&#xA;						                                write (PS2_Output,  PS2);&#xD;&#xA;						                                write (PS4_Output,  PS4);&#xD;&#xA;						if(@SFR) {if (SFR==40)   {}else{write (SFR_Output,  SFR);}}&#xD;&#xA;						if(@TFR) {if (TFR==600)  {}else{write (TFR_Output,  TFR);}}&#xD;&#xA;						if(@HSP) {if (HSP==500)  {}else{write (HSP_Output,  HSP);}}&#xD;&#xA;						if(@LSP) {if (LSP==0)    {}else{write (LSP_Output,  LSP);}}&#xD;&#xA;						if(@NRD) {if (NRD==1)    {}else{write (NRD_Output,  NRD);}}&#xD;&#xA;						if(@FLR) {if (FLR==0)    {}else{write (FLR_Output,  FLR);}}&#xD;&#xA;						if(@R2)  {if  (R2==0)    {}else{write  (R2_Output,   R2);}}&#xD;&#xA;						if(@DO)  {if  (DO==0)    {}else{write  (DO_Output,   DO);}}&#xD;&#xA;						if(@IPL) {if (IPL==1)    {}else{write (IPL_Output,  IPL);}}&#xD;&#xA;						if(@STP) {if (STP==0)    {}else{write (STP_Output,  STP);}}&#xD;&#xA;						if(@EPL) {if (EPL==1)    {}else{write (EPL_Output,  EPL);}}&#xD;&#xA;						if(@DRN) {if (DRN==0)    {}else{write (DRN_Output,  DRN);}}&#xD;&#xA;						if(@OHL) {if (OHL==1)    {}else{write (OHL_Output,  OHL);}}&#xD;&#xA;						if(@OLL) {if (OLL==1)    {}else{write (OLL_Output,  OLL);}}&#xD;&#xA;						if(@COL) {if (COL==1)    {}else{write (COL_Output,  COL);}}&#xD;&#xA;						if(@TNL) {if (TNL==1)    {}else{write (TNL_Output,  TNL);}}&#xD;&#xA;						if(@LFF) {if (LFF==100)  {}else{write (LFF_Output,  LFF);}}&#xD;&#xA;						if(@LET) {if (LET==1)    {}else{write (LET_Output,  LET);}}&#xD;&#xA;						if(@ATR) {if (ATR==0)    {}else{write (ATR_Output,  ATR);}}&#xD;&#xA;						if(@TAR) {if (TAR==0)    {}else{write (TAR_Output,  TAR);}}&#xD;&#xA;						if(@RSF) {if (RSF==0)    {}else{write (RSF_Output,  RSF);}}&#xD;&#xA;						if(@INH) {if (INH==0)    {}else{write (INH_Output,  INH);}}&#xD;&#xA;						if(@ETF) {if (ETF==0)    {}else{write (ETF_Output,  ETF);}}&#xD;&#xA;						if(@CHP) {if (CHP==0)    {}else{write (CHP_Output,  CHP);}}&#xD;&#xA;						if(@CHCF){if(CHCF==1)    {}else{write(CHCF_Output, CHCF);}}&#xD;&#xA;						if(@COP) {if (COP==0)    {}else{write (COP_Output,  COP);}}&#xD;&#xA;						if(@RFC) {if (RFC==96)   {}else{write (RFC_Output,  RFC);}}&#xD;&#xA;						if(@FR2) {if (FR2==0)    {}else{write (FR2_Output,  FR2);}}&#xD;&#xA;						if(@CCS) {if (CCS==98)   {}else{write (CCS_Output,  CCS);}}&#xD;&#xA;						if(@FLO) {if (FLO==0)    {}else{write (FLO_Output,  FLO);}}&#xD;&#xA;						if(@ACC) {if (ACC==30)   {}else{write (ACC_Output,  ACC);}}&#xD;&#xA;						if(@DEC) {if (DEC==30)   {}else{write (DEC_Output,  DEC);}}&#xD;&#xA;						if(@BRA) {if (BRA==1)    {}else{write (BRA_Output,  BRA);}}&#xD;&#xA;						if(@RPT) {if (RPT==0)    {}else{write (RPT_Output,  RPT);}}&#xD;&#xA;						if(@TA1) {if (TA1==10)   {}else{write (TA1_Output,  TA1);}}&#xD;&#xA;						if(@TA2) {if (TA2==10)   {}else{write (TA2_Output,  TA2);}}&#xD;&#xA;						if(@TA3) {if (TA3==10)   {}else{write (TA3_Output,  TA3);}}&#xD;&#xA;						if(@TA4) {if (TA4==10)   {}else{write (TA4_Output,  TA4);}}&#xD;&#xA;						if(@RPS) {if (RPS==0)    {}else{write (RPS_Output,  RPS);}}&#xD;&#xA;						if(@FRT) {if (FRT==0)    {}else{write (FRT_Output,  FRT);}}&#xD;&#xA;						if(@AC2) {if (AC2==50)   {}else{write (AC2_Output,  AC2);}}&#xD;&#xA;						if(@DE2) {if (DE2==50)   {}else{write (DE2_Output,  DE2);}}&#xD;&#xA;						if(@INR) {if (INR==1)    {}else{write (INR_Output,  INR);}}&#xD;&#xA;						if(@SRF) {if (SRF==0)    {}else{write (SRF_Output,  SRF);}}&#xD;&#xA;						if(@CLI) {if (CLI==0)    {}else{write (CLI_Output,  CLI);}}&#xD;&#xA;						if(@LC2) {if (LC2==0)    {}else{write (LC2_Output,  LC2);}}&#xD;&#xA;						if(@CL2) {if (CL2==0)    {}else{write (CL2_Output,  CL2);}}&#xD;&#xA;						if(@UNS) {if (UNS==100)  {}else{write (UNS_Output,  UNS);}}&#xD;&#xA;						if(@NCR) {if (NCR==0)    {}else{write (NCR_Output,  NCR);}}&#xD;&#xA;						if(@NSP) {if (NSP==0)    {}else{write (NSP_Output,  NSP);}}&#xD;&#xA;						if(@COS) {if (COS==50)   {}else{write (COS_Output,  COS);}}&#xD;&#xA;						if(@UFT) {write (UFT_Output,  UFT);}&#xD;&#xA;						if(@TUN) {if (TUN==0)    {}else{write (TUN_Output,  TUN);}}&#xD;&#xA;						if(@OPL) {if (OPL==1)    {}else{write (OPL_Output,  OPL);}}&#xD;&#xA;						if(@FLG) {if (FLG==20)   {}else{write (FLG_Output,  FLG);}}&#xD;&#xA;						if(@STA) {if (STA==20)   {}else{write (STA_Output,  STA);}}&#xD;&#xA;						if(@ITH) {if (ITH==0)    {}else{write (ITH_Output,  ITH);}}&#xD;&#xA;						if(@UFR) {if (UFR==20)   {}else{write (UFR_Output,  UFR);}}&#xD;&#xA;						if(@SLP) {if (SLP==100)  {}else{write (SLP_Output,  SLP);}}&#xD;&#xA;						if(@RSC) {if (RSC==0)    {}else{write (RSC_Output,  RSC);}}&#xD;&#xA;						if(@UNS2){if(UNS2==100)  {}else{write(UNS2_Output, UNS2);}}&#xD;&#xA;						if(@FRS2){if(FRS2==500)  {}else{write(FRS2_Output, FRS2);}}&#xD;&#xA;						if(@NCR2){if(NCR2==0)    {}else{write(NCR2_Output, NCR2);}}&#xD;&#xA;						if(@NSP2){if(NSP2==0)    {}else{write(NSP2_Output, NSP2);}}&#xD;&#xA;						if(@COS2){if(COS2==50)   {}else{write(COS2_Output, COS2);}}&#xD;&#xA;						if(@UFT2){if(UFT2==2)    {}else{write(UFT2_Output, UFT2);}}&#xD;&#xA;						if(@FLG2){if(FLG2==20)   {}else{write(FLG2_Output, FLG2);}}&#xD;&#xA;						if(@STA2){if(STA2==20)   {}else{write(STA2_Output, STA2);}}&#xD;&#xA;						if(@UFR2){if(UFR2==20)   {}else{write(UFR2_Output, UFR2);}}&#xD;&#xA;						if(@SLP2){if(SLP2==100)  {}else{write(SLP2_Output, SLP2);}}&#xD;&#xA;						if(@BLC) {if (BLC==0)    {}else{write (BLC_Output,  BLC);}}&#xD;&#xA;						if(@BRL) {if (BRL==0)    {}else{write (BRL_Output,  BRL);}}&#xD;&#xA;						if(@BEN) {if (BEN==65535){}else{write (BEN_Output,  BEN);}}&#xD;&#xA;						if(@BRT) {if (BRT==50)   {}else{write (BRT_Output,  BRT);}}&#xD;&#xA;						if(@BET) {if (BET==50)   {}else{write (BET_Output,  BET);}}&#xD;&#xA;						if(@IBR) {if (IBR==0)    {}else{write (IBR_Output,  IBR);}}&#xD;&#xA;						if(@BIP) {if (BIP==0)    {}else{write (BIP_Output,  BIP);}}&#xD;&#xA;						if(@ADC) {if (ADC==1)    {}else{write (ADC_Output,  ADC);}}&#xD;&#xA;						if(@TDC1){if(TDC1==5)    {}else{write(TDC1_Output, TDC1);}}&#xD;&#xA;						if(@SDC1){if(SDC1==0)    {}else{write(SDC1_Output, SDC1);}}&#xD;&#xA;						if(@TDC2){if(TDC2==0)    {}else{write(TDC2_Output, TDC2);}}&#xD;&#xA;						if(@SDC2){if(SDC2==0)    {}else{write(SDC2_Output, SDC2);}}&#xD;&#xA;						if(@CTD) {if (CTD==0)    {}else{write (CTD_Output,  CTD);}}&#xD;&#xA;						if(@TTD) {if (TTD==100)  {}else{write (TTD_Output,  TTD);}}&#xD;&#xA;						if(@FTD) {if (FTD==500)  {}else{write (FTD_Output,  FTD);}}&#xD;&#xA;						if(@TCT) {if (TCT==1)    {}else{write (TCT_Output,  TCT);}}&#xD;&#xA;						if(@RRS) {if (RRS==130)  {}else{write (RRS_Output,  RRS);}}&#xD;&#xA;						if(@JOG) {if (JOG==0)    {}else{write (JOG_Output,  JOG);}}&#xD;&#xA;						if(@JGF) {if (JGF==100)  {}else{write (JGF_Output,  JGF);}}&#xD;&#xA;						if(@STT) {if (STT==0)    {}else{write (STT_Output,  STT);}}&#xD;&#xA;						if(@NST) {if (NST==0)    {}else{write (NST_Output,  NST);}}&#xD;&#xA;						if(@DCI) {if (DCI==0)    {}else{write (DCI_Output,  DCI);}}&#xD;&#xA;						if(@FST) {if (FST==0)    {}else{write (FST_Output,  FST);}}&#xD;&#xA;						if(@IDC) {if (IDC==0)    {}else{write (IDC_Output,  IDC);}}&#xD;&#xA;						if(@TDC) {if (TDC==5)    {}else{write (TDC_Output,  TDC);}}&#xD;&#xA;						if(@DCF) {if (DCF==4)    {}else{write (DCF_Output,  DCF);}}&#xD;&#xA;						if(@JPF) {if (JPF==0)    {}else{write (JPF_Output,  JPF);}}&#xD;&#xA;						if(@JF2) {if (JF2==0)    {}else{write (JF2_Output,  JF2);}}&#xD;&#xA;						if(@PS8) {if (PS8==0)    {}else{write (PS8_Output,  PS8);}}&#xD;&#xA;						if(@PS16){if(PS16==0)    {}else{write(PS16_Output, PS16);}}&#xD;&#xA;						if(@SP2) {if (SP2==100)  {}else{write (SP2_Output,  SP2);}}&#xD;&#xA;						if(@SP3) {if (SP3==150)  {}else{write (SP3_Output,  SP3);}}&#xD;&#xA;						if(@SP4) {if (SP4==200)  {}else{write (SP4_Output,  SP4);}}&#xD;&#xA;						if(@SP5) {if (SP5==250)  {}else{write (SP5_Output,  SP5);}}&#xD;&#xA;						if(@SP6) {if (SP6==300)  {}else{write (SP6_Output,  SP6);}}&#xD;&#xA;						if(@SP7) {if (SP7==350)  {}else{write (SP7_Output,  SP7);}}&#xD;&#xA;						if(@SP8) {if (SP8==400)  {}else{write (SP8_Output,  SP8);}}&#xD;&#xA;						if(@SP9) {if (SP9==450)  {}else{write (SP9_Output,  SP9);}}&#xD;&#xA;						if(@SP10){if(SP10==500)  {}else{write(SP10_Output, SP10);}}&#xD;&#xA;						if(@SP11){if(SP11==550)  {}else{write(SP11_Output, SP11);}}&#xD;&#xA;						if(@SP12){if(SP12==600)  {}else{write(SP12_Output, SP12);}}&#xD;&#xA;						if(@SP13){if(SP13==700)  {}else{write(SP13_Output, SP13);}}&#xD;&#xA;						if(@SP14){if(SP14==800)  {}else{write(SP14_Output, SP14);}}&#xD;&#xA;						if(@SP15){if(SP15==900)  {}else{write(SP15_Output, SP15);}}&#xD;&#xA;						if(@SP16){if(SP16==1000) {}else{write(SP16_Output, SP16);}}&#xD;&#xA;						if(@USP) {if (USP==0)    {}else{write (USP_Output,  USP);}}&#xD;&#xA;						if(@DSP) {if (DSP==0)    {}else{write (DSP_Output,  DSP);}}&#xD;&#xA;						if(@STR) {if (STR==0)    {}else{write (STR_Output,  STR);}}&#xD;&#xA;						if(@LAF) {if (LAF==0)    {}else{write (LAF_Output,  LAF);}}&#xD;&#xA;						if(@LAR) {if (LAR==0)    {}else{write (LAR_Output,  LAR);}}&#xD;&#xA;						if(@LAS) {if (LAS==2)    {}else{write (LAS_Output,  LAS);}}&#xD;&#xA;						if(@TLS) {if (TLS==0)    {}else{write (TLS_Output,  TLS);}}&#xD;&#xA;						if(@SA3) {if (SA3==0)    {}else{write (SA3_Output,  SA3);}}&#xD;&#xA;						if(@SDS) {if (SDS==300)  {}else{write (SDS_Output,  SDS);}}&#xD;&#xA;						if(@ROT) {if (ROT==0)    {}else{write (ROT_Output,  ROT);}}&#xD;&#xA;						if(@PST) {if (PST==1)    {}else{write (PST_Output,  PST);}}&#xD;&#xA;					write(CMI_Output_Async, 0);&#xD;&#xA;				}&#xD;&#xA;				write(CounterConfig01, 0x00&#xD;&#xA;				| CounterMode01==&quot;event_rising_falling&quot;		? 0x01 : 0x00&#xD;&#xA;				| CounterMode01==&quot;event_rising&quot;			? 0x02 : 0x00&#xD;&#xA;				| CounterMode01==&quot;event_falling&quot;		? 0x03 : 0x00&#xD;&#xA;				| CounterMode01==&quot;gate_rising_falling&quot;		? 0x04 : 0x00&#xD;&#xA;				| CounterMode01==&quot;gate_falling_rising&quot;		? 0x05 : 0x00&#xD;&#xA;				| CounterMode01==&quot;period_rising_rising&quot;		? 0x06 : 0x00&#xD;&#xA;				| CounterMode01==&quot;period_falling_falling&quot;	? 0x07 : 0x00&#xD;&#xA;				| CounterFrequency01==&quot;4MHz&quot;			? 0x00 : 0x00&#xD;&#xA;				| CounterFrequency01==&quot;external&quot;		? 0x08 : 0x00&#xD;&#xA;				| CounterFrequency01==&quot;31.25kHz&quot;		? 0x10 : 0x00);&#xD;&#xA;				write(CounterConfig02, 0x00&#xD;&#xA;				| CounterMode02==&quot;event_rising_falling&quot;		? 0x01 : 0x00&#xD;&#xA;				| CounterMode02==&quot;event_rising&quot;			? 0x02 : 0x00&#xD;&#xA;				| CounterMode02==&quot;event_falling&quot;		? 0x03 : 0x00&#xD;&#xA;				| CounterMode02==&quot;gate_rising_falling&quot;		? 0x04 : 0x00&#xD;&#xA;				| CounterMode02==&quot;gate_falling_rising&quot;		? 0x05 : 0x00&#xD;&#xA;				| CounterMode02==&quot;period_rising_rising&quot;		? 0x06 : 0x00&#xD;&#xA;				| CounterMode02==&quot;period_falling_falling&quot;	? 0x07 : 0x00&#xD;&#xA;				| CounterFrequency02==&quot;4MHz&quot;			? 0x00 : 0x00&#xD;&#xA;				| CounterFrequency02==&quot;31.25kHz&quot;		? 0x10 : 0x00);&#xD;&#xA;				if(LFRD_LFR_Filter==&quot;LFRD_RFRD&quot;){&#xD;&#xA;					write(RX_Obj1, 0x60440002);	/* RFRD */&#xD;&#xA;					write(TX_Obj1, 0x60420002);	/* LFRD */&#xD;&#xA;				}&#xD;&#xA;				if(LFRD_LFR_Filter==&quot;LFR_RFR&quot;){&#xD;&#xA;					write(RX_Obj1, 0x20020302);	/* RFR */&#xD;&#xA;					write(TX_Obj1, 0x20370302);	/* LFR */&#xD;&#xA;				}&#xD;&#xA;				if(DigitalOutputMode01==&quot;actionDO&quot;){&#xD;&#xA;					write(TX_Obj4, 0x20163E02);	/* AO1R */&#xD;&#xA;				}&#xD;&#xA;				if(SDC_Mode==0){}else{&#xD;&#xA;					write(SDC_Mode_Output, SDC_Mode);&#xD;&#xA;					write(SDC_IOPrescaler_Output, SDCAIOPrescaler);&#xD;&#xA;				}&#xD;&#xA;				write(RX_EnableMask_Output, 0xffffffff);&#xD;&#xA;				write(TX_EnableMask_Output, 0xffffffff);&#xD;&#xA;				write(Cyclic_Mode_Output, 1);&#xD;&#xA;				write(OutputConfiguration01, 0x00&#xD;&#xA;				| DigitalOutputMode01==&quot;actionDO&quot;		? 0x02	: 0x00&#xD;&#xA;				| 0x01);&#xD;&#xA;				" />
+      <Parameter ID="InitScript" Value="&#xD;&#xA;				if (DownloadParameters==&quot;no&quot;){}else{&#xD;&#xA;					if (DownloadParameters==&quot;onChange&quot;){&#xD;&#xA;						write(EnableConfigAtChange01,0x01);&#xD;&#xA;					}&#xD;&#xA;					write(CMI_Output_Async, 0);&#xD;&#xA;					write(CMI_Output_Async, 1);&#xD;&#xA;						                                write (LAC_Output,  LAC);&#xD;&#xA;						if(@TCC) {if (TCC==0)    {}else{write (TCC_Output,  TCC);}}&#xD;&#xA;						                                write (BFR_Output,  BFR);&#xD;&#xA;						if(@FRS) {if (FRS==500)  {}else{write (FRS_Output,  FRS);}}&#xD;&#xA;					write(CMI_Output_Async, 32768);&#xD;&#xA;						                                write (FR1_Output,  FR1);&#xD;&#xA;						                                write (CD1_Output,  CD1);&#xD;&#xA;						                                write (CD2_Output,  CD2);&#xD;&#xA;						                                write(FLOC_Output, FLOC);&#xD;&#xA;						                                write (SA2_Output,  SA2);&#xD;&#xA;						                                write (COD_Output,  COD);&#xD;&#xA;						          if (COD==0)    {}else{write (COD_Output,    1);}&#xD;&#xA;						                                write (CMD_Output,  128);&#xD;&#xA;						                                write (PS2_Output,  PS2);&#xD;&#xA;						                                write (PS4_Output,  PS4);&#xD;&#xA;						if(@SFR) {if (SFR==40)   {}else{write (SFR_Output,  SFR);}}&#xD;&#xA;						if(@TFR) {if (TFR==600)  {}else{write (TFR_Output,  TFR);}}&#xD;&#xA;						if(@HSP) {if (HSP==500)  {}else{write (HSP_Output,  HSP);}}&#xD;&#xA;						if(@LSP) {if (LSP==0)    {}else{write (LSP_Output,  LSP);}}&#xD;&#xA;						if(@NRD) {if (NRD==1)    {}else{write (NRD_Output,  NRD);}}&#xD;&#xA;						if(@FLR) {if (FLR==0)    {}else{write (FLR_Output,  FLR);}}&#xD;&#xA;						if(@R2)  {if  (R2==0)    {}else{write  (R2_Output,   R2);}}&#xD;&#xA;						if(@DO)  {if  (DO==0)    {}else{write  (DO_Output,   DO);}}&#xD;&#xA;						if(@IPL) {if (IPL==1)    {}else{write (IPL_Output,  IPL);}}&#xD;&#xA;						if(@STP) {if (STP==0)    {}else{write (STP_Output,  STP);}}&#xD;&#xA;						if(@EPL) {if (EPL==1)    {}else{write (EPL_Output,  EPL);}}&#xD;&#xA;						if(@DRN) {if (DRN==0)    {}else{write (DRN_Output,  DRN);}}&#xD;&#xA;						if(@OHL) {if (OHL==1)    {}else{write (OHL_Output,  OHL);}}&#xD;&#xA;						if(@OLL) {if (OLL==1)    {}else{write (OLL_Output,  OLL);}}&#xD;&#xA;						if(@COL) {if (COL==7)    {}else{write (COL_Output,  COL);}}&#xD;&#xA;						if(@TNL) {if (TNL==1)    {}else{write (TNL_Output,  TNL);}}&#xD;&#xA;						if(@LFF) {if (LFF==100)  {}else{write (LFF_Output,  LFF);}}&#xD;&#xA;						if(@LET) {if (LET==1)    {}else{write (LET_Output,  LET);}}&#xD;&#xA;						if(@ATR) {if (ATR==0)    {}else{write (ATR_Output,  ATR);}}&#xD;&#xA;						if(@TAR) {if (TAR==0)    {}else{write (TAR_Output,  TAR);}}&#xD;&#xA;						if(@RSF) {if (RSF==0)    {}else{write (RSF_Output,  RSF);}}&#xD;&#xA;						if(@INH) {if (INH==0)    {}else{write (INH_Output,  INH);}}&#xD;&#xA;						if(@ETF) {if (ETF==0)    {}else{write (ETF_Output,  ETF);}}&#xD;&#xA;						if(@CHP) {if (CHP==0)    {}else{write (CHP_Output,  CHP);}}&#xD;&#xA;						if(@CHCF){if(CHCF==1)    {}else{write(CHCF_Output, CHCF);}}&#xD;&#xA;						if(@COP) {if (COP==0)    {}else{write (COP_Output,  COP);}}&#xD;&#xA;						if(@RFC) {if (RFC==96)   {}else{write (RFC_Output,  RFC);}}&#xD;&#xA;						if(@FR2) {if (FR2==0)    {}else{write (FR2_Output,  FR2);}}&#xD;&#xA;						if(@CCS) {if (CCS==98)   {}else{write (CCS_Output,  CCS);}}&#xD;&#xA;						if(@FLO) {if (FLO==0)    {}else{write (FLO_Output,  FLO);}}&#xD;&#xA;						if(@ACC) {if (ACC==30)   {}else{write (ACC_Output,  ACC);}}&#xD;&#xA;						if(@DEC) {if (DEC==30)   {}else{write (DEC_Output,  DEC);}}&#xD;&#xA;						if(@BRA) {if (BRA==1)    {}else{write (BRA_Output,  BRA);}}&#xD;&#xA;						if(@RPT) {if (RPT==0)    {}else{write (RPT_Output,  RPT);}}&#xD;&#xA;						if(@TA1) {if (TA1==10)   {}else{write (TA1_Output,  TA1);}}&#xD;&#xA;						if(@TA2) {if (TA2==10)   {}else{write (TA2_Output,  TA2);}}&#xD;&#xA;						if(@TA3) {if (TA3==10)   {}else{write (TA3_Output,  TA3);}}&#xD;&#xA;						if(@TA4) {if (TA4==10)   {}else{write (TA4_Output,  TA4);}}&#xD;&#xA;						if(@RPS) {if (RPS==0)    {}else{write (RPS_Output,  RPS);}}&#xD;&#xA;						if(@FRT) {if (FRT==0)    {}else{write (FRT_Output,  FRT);}}&#xD;&#xA;						if(@AC2) {if (AC2==50)   {}else{write (AC2_Output,  AC2);}}&#xD;&#xA;						if(@DE2) {if (DE2==50)   {}else{write (DE2_Output,  DE2);}}&#xD;&#xA;						if(@INR) {if (INR==1)    {}else{write (INR_Output,  INR);}}&#xD;&#xA;						if(@SRF) {if (SRF==0)    {}else{write (SRF_Output,  SRF);}}&#xD;&#xA;						if(@CLI) {if (CLI==0)    {}else{write (CLI_Output,  CLI);}}&#xD;&#xA;						if(@LC2) {if (LC2==0)    {}else{write (LC2_Output,  LC2);}}&#xD;&#xA;						if(@CL2) {if (CL2==0)    {}else{write (CL2_Output,  CL2);}}&#xD;&#xA;						if(@UNS) {if (UNS==100)  {}else{write (UNS_Output,  UNS);}}&#xD;&#xA;						if(@NCR) {if (NCR==0)    {}else{write (NCR_Output,  NCR);}}&#xD;&#xA;						if(@NSP) {if (NSP==0)    {}else{write (NSP_Output,  NSP);}}&#xD;&#xA;						if(@COS) {if (COS==50)   {}else{write (COS_Output,  COS);}}&#xD;&#xA;						if(@UFT) {if (UFT==2)    {}else{write (UFT_Output,  UFT);}}&#xD;&#xA;						if(@TUN) {if (TUN==0)    {}else{write (TUN_Output,  TUN);}}&#xD;&#xA;						if(@OPL) {if (OPL==1)    {}else{write (OPL_Output,  OPL);}}&#xD;&#xA;						if(@FLG) {if (FLG==20)   {}else{write (FLG_Output,  FLG);}}&#xD;&#xA;						if(@STA) {if (STA==20)   {}else{write (STA_Output,  STA);}}&#xD;&#xA;						if(@ITH) {if (ITH==0)    {}else{write (ITH_Output,  ITH);}}&#xD;&#xA;						if(@UFR) {if (UFR==20)   {}else{write (UFR_Output,  UFR);}}&#xD;&#xA;						if(@SLP) {if (SLP==100)  {}else{write (SLP_Output,  SLP);}}&#xD;&#xA;						if(@RSC) {if (RSC==0)    {}else{write (RSC_Output,  RSC);}}&#xD;&#xA;						if(@UNS2){if(UNS2==100)  {}else{write(UNS2_Output, UNS2);}}&#xD;&#xA;						if(@FRS2){if(FRS2==500)  {}else{write(FRS2_Output, FRS2);}}&#xD;&#xA;						if(@NCR2){if(NCR2==0)    {}else{write(NCR2_Output, NCR2);}}&#xD;&#xA;						if(@NSP2){if(NSP2==0)    {}else{write(NSP2_Output, NSP2);}}&#xD;&#xA;						if(@COS2){if(COS2==50)   {}else{write(COS2_Output, COS2);}}&#xD;&#xA;						if(@UFT2){if(UFT2==2)    {}else{write(UFT2_Output, UFT2);}}&#xD;&#xA;						if(@FLG2){if(FLG2==20)   {}else{write(FLG2_Output, FLG2);}}&#xD;&#xA;						if(@STA2){if(STA2==20)   {}else{write(STA2_Output, STA2);}}&#xD;&#xA;						if(@UFR2){if(UFR2==20)   {}else{write(UFR2_Output, UFR2);}}&#xD;&#xA;						if(@SLP2){if(SLP2==100)  {}else{write(SLP2_Output, SLP2);}}&#xD;&#xA;						if(@BLC) {if (BLC==0)    {}else{write (BLC_Output,  BLC);}}&#xD;&#xA;						if(@BRL) {if (BRL==0)    {}else{write (BRL_Output,  BRL);}}&#xD;&#xA;						if(@BEN) {if (BEN==65535){}else{write (BEN_Output,  BEN);}}&#xD;&#xA;						if(@BRT) {if (BRT==50)   {}else{write (BRT_Output,  BRT);}}&#xD;&#xA;						if(@BET) {if (BET==50)   {}else{write (BET_Output,  BET);}}&#xD;&#xA;						if(@IBR) {if (IBR==0)    {}else{write (IBR_Output,  IBR);}}&#xD;&#xA;						if(@BIP) {if (BIP==0)    {}else{write (BIP_Output,  BIP);}}&#xD;&#xA;						if(@ADC) {if (ADC==1)    {}else{write (ADC_Output,  ADC);}}&#xD;&#xA;						if(@TDC1){if(TDC1==5)    {}else{write(TDC1_Output, TDC1);}}&#xD;&#xA;						if(@SDC1){if(SDC1==0)    {}else{write(SDC1_Output, SDC1);}}&#xD;&#xA;						if(@TDC2){if(TDC2==0)    {}else{write(TDC2_Output, TDC2);}}&#xD;&#xA;						if(@SDC2){if(SDC2==0)    {}else{write(SDC2_Output, SDC2);}}&#xD;&#xA;						if(@CTD) {if (CTD==0)    {}else{write (CTD_Output,  CTD);}}&#xD;&#xA;						if(@TTD) {if (TTD==100)  {}else{write (TTD_Output,  TTD);}}&#xD;&#xA;						if(@FTD) {if (FTD==500)  {}else{write (FTD_Output,  FTD);}}&#xD;&#xA;						if(@TCT) {if (TCT==1)    {}else{write (TCT_Output,  TCT);}}&#xD;&#xA;						if(@RRS) {if (RRS==130)  {}else{write (RRS_Output,  RRS);}}&#xD;&#xA;						if(@JOG) {if (JOG==0)    {}else{write (JOG_Output,  JOG);}}&#xD;&#xA;						if(@JGF) {if (JGF==100)  {}else{write (JGF_Output,  JGF);}}&#xD;&#xA;						if(@STT) {if (STT==0)    {}else{write (STT_Output,  STT);}}&#xD;&#xA;						if(@NST) {if (NST==0)    {}else{write (NST_Output,  NST);}}&#xD;&#xA;						if(@DCI) {if (DCI==0)    {}else{write (DCI_Output,  DCI);}}&#xD;&#xA;						if(@FST) {if (FST==0)    {}else{write (FST_Output,  FST);}}&#xD;&#xA;						if(@IDC) {if (IDC==0)    {}else{write (IDC_Output,  IDC);}}&#xD;&#xA;						if(@TDC) {if (TDC==5)    {}else{write (TDC_Output,  TDC);}}&#xD;&#xA;						if(@DCF) {if (DCF==4)    {}else{write (DCF_Output,  DCF);}}&#xD;&#xA;						if(@JPF) {if (JPF==0)    {}else{write (JPF_Output,  JPF);}}&#xD;&#xA;						if(@JF2) {if (JF2==0)    {}else{write (JF2_Output,  JF2);}}&#xD;&#xA;						if(@PS8) {if (PS8==0)    {}else{write (PS8_Output,  PS8);}}&#xD;&#xA;						if(@PS16){if(PS16==0)    {}else{write(PS16_Output, PS16);}}&#xD;&#xA;						if(@SP2) {if (SP2==100)  {}else{write (SP2_Output,  SP2);}}&#xD;&#xA;						if(@SP3) {if (SP3==150)  {}else{write (SP3_Output,  SP3);}}&#xD;&#xA;						if(@SP4) {if (SP4==200)  {}else{write (SP4_Output,  SP4);}}&#xD;&#xA;						if(@SP5) {if (SP5==250)  {}else{write (SP5_Output,  SP5);}}&#xD;&#xA;						if(@SP6) {if (SP6==300)  {}else{write (SP6_Output,  SP6);}}&#xD;&#xA;						if(@SP7) {if (SP7==350)  {}else{write (SP7_Output,  SP7);}}&#xD;&#xA;						if(@SP8) {if (SP8==400)  {}else{write (SP8_Output,  SP8);}}&#xD;&#xA;						if(@SP9) {if (SP9==450)  {}else{write (SP9_Output,  SP9);}}&#xD;&#xA;						if(@SP10){if(SP10==500)  {}else{write(SP10_Output, SP10);}}&#xD;&#xA;						if(@SP11){if(SP11==550)  {}else{write(SP11_Output, SP11);}}&#xD;&#xA;						if(@SP12){if(SP12==600)  {}else{write(SP12_Output, SP12);}}&#xD;&#xA;						if(@SP13){if(SP13==700)  {}else{write(SP13_Output, SP13);}}&#xD;&#xA;						if(@SP14){if(SP14==800)  {}else{write(SP14_Output, SP14);}}&#xD;&#xA;						if(@SP15){if(SP15==900)  {}else{write(SP15_Output, SP15);}}&#xD;&#xA;						if(@SP16){if(SP16==1000) {}else{write(SP16_Output, SP16);}}&#xD;&#xA;						if(@USP) {if (USP==0)    {}else{write (USP_Output,  USP);}}&#xD;&#xA;						if(@DSP) {if (DSP==0)    {}else{write (DSP_Output,  DSP);}}&#xD;&#xA;						if(@STR) {if (STR==0)    {}else{write (STR_Output,  STR);}}&#xD;&#xA;						if(@LAF) {if (LAF==0)    {}else{write (LAF_Output,  LAF);}}&#xD;&#xA;						if(@LAR) {if (LAR==0)    {}else{write (LAR_Output,  LAR);}}&#xD;&#xA;						if(@LAS) {if (LAS==2)    {}else{write (LAS_Output,  LAS);}}&#xD;&#xA;						if(@TLS) {if (TLS==0)    {}else{write (TLS_Output,  TLS);}}&#xD;&#xA;						if(@SA3) {if (SA3==0)    {}else{write (SA3_Output,  SA3);}}&#xD;&#xA;						if(@SDS) {if (SDS==300)  {}else{write (SDS_Output,  SDS);}}&#xD;&#xA;						if(@ROT) {if (ROT==0)    {}else{write (ROT_Output,  ROT);}}&#xD;&#xA;						if(@PST) {if (PST==1)    {}else{write (PST_Output,  PST);}}&#xD;&#xA;					write(CMI_Output_Async, 0);&#xD;&#xA;				}&#xD;&#xA;				write(CounterConfig01, 0x00&#xD;&#xA;				| CounterMode01==&quot;event_rising_falling&quot;		? 0x01 : 0x00&#xD;&#xA;				| CounterMode01==&quot;event_rising&quot;			? 0x02 : 0x00&#xD;&#xA;				| CounterMode01==&quot;event_falling&quot;		? 0x03 : 0x00&#xD;&#xA;				| CounterMode01==&quot;gate_rising_falling&quot;		? 0x04 : 0x00&#xD;&#xA;				| CounterMode01==&quot;gate_falling_rising&quot;		? 0x05 : 0x00&#xD;&#xA;				| CounterMode01==&quot;period_rising_rising&quot;		? 0x06 : 0x00&#xD;&#xA;				| CounterMode01==&quot;period_falling_falling&quot;	? 0x07 : 0x00&#xD;&#xA;				| CounterFrequency01==&quot;4MHz&quot;			? 0x00 : 0x00&#xD;&#xA;				| CounterFrequency01==&quot;external&quot;		? 0x08 : 0x00&#xD;&#xA;				| CounterFrequency01==&quot;31.25kHz&quot;		? 0x10 : 0x00);&#xD;&#xA;				write(CounterConfig02, 0x00&#xD;&#xA;				| CounterMode02==&quot;event_rising_falling&quot;		? 0x01 : 0x00&#xD;&#xA;				| CounterMode02==&quot;event_rising&quot;			? 0x02 : 0x00&#xD;&#xA;				| CounterMode02==&quot;event_falling&quot;		? 0x03 : 0x00&#xD;&#xA;				| CounterMode02==&quot;gate_rising_falling&quot;		? 0x04 : 0x00&#xD;&#xA;				| CounterMode02==&quot;gate_falling_rising&quot;		? 0x05 : 0x00&#xD;&#xA;				| CounterMode02==&quot;period_rising_rising&quot;		? 0x06 : 0x00&#xD;&#xA;				| CounterMode02==&quot;period_falling_falling&quot;	? 0x07 : 0x00&#xD;&#xA;				| CounterFrequency02==&quot;4MHz&quot;			? 0x00 : 0x00&#xD;&#xA;				| CounterFrequency02==&quot;31.25kHz&quot;		? 0x10 : 0x00);&#xD;&#xA;				if(LFRD_LFR_Filter==&quot;LFRD_RFRD&quot;){&#xD;&#xA;					write(RX_Obj1, 0x60440002);	/* RFRD */&#xD;&#xA;					write(TX_Obj1, 0x60420002);	/* LFRD */&#xD;&#xA;				}&#xD;&#xA;				if(LFRD_LFR_Filter==&quot;LFR_RFR&quot;){&#xD;&#xA;					write(RX_Obj1, 0x20020302);	/* RFR */&#xD;&#xA;					write(TX_Obj1, 0x20370302);	/* LFR */&#xD;&#xA;				}&#xD;&#xA;				if(DigitalOutputMode01==&quot;actionDO&quot;){&#xD;&#xA;					write(TX_Obj4, 0x20163E02);	/* AO1R */&#xD;&#xA;				}&#xD;&#xA;				if(SDC_Mode==0){}else{&#xD;&#xA;					write(SDC_Mode_Output, SDC_Mode);&#xD;&#xA;					write(SDC_IOPrescaler_Output, SDCAIOPrescaler);&#xD;&#xA;				}&#xD;&#xA;				write(RX_EnableMask_Output, 0xffffffff);&#xD;&#xA;				write(TX_EnableMask_Output, 0xffffffff);&#xD;&#xA;				write(Cyclic_Mode_Output, 1);&#xD;&#xA;				write(OutputConfiguration01, 0x00&#xD;&#xA;				| DigitalOutputMode01==&quot;actionDO&quot;		? 0x02	: 0x00&#xD;&#xA;				| 0x01);&#xD;&#xA;				" />
       <!-- Hier wird die ChannelDescription durch Merging eingefuegt -->
       <Channel ID="ModuleOk">
         <Parameter ID="Ext" Value="/OK" />
@@ -4519,36 +4601,13 @@
         <Parameter ID="Type" Value="UINT" />
       </Channel>
       <Channel ID="ACPi_ModuleID">
-        <Filter Value="InverterInfo='off' AND IS_RUNTIME='1'" />
-        <Parameter ID="Ext" Value="/NOTCYCLIC" />
-        <Parameter ID="Address" Value="0x1006" Type="UDINT" />
-        <Parameter ID="Direction" Value="IN" />
-        <Parameter ID="Type" Value="UINT" />
-      </Channel>
-      <Channel ID="ACPi_ModuleID_cyc_UDINT">
         <Filter Value="InverterInfo='on'" />
-        <Parameter ID="Name" Value="ACPi_ModuleID" />
         <Parameter ID="Address" Value="0x1004" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="UDINT" />
       </Channel>
-      <Channel ID="ACPi_ModuleID_cyc_UINT">
-        <Filter Value="InverterInfo='cyc'" />
-        <Parameter ID="Name" Value="ACPi_ModuleID" />
-        <Parameter ID="Address" Value="0x1006" Type="UDINT" />
-        <Parameter ID="Direction" Value="IN" />
-        <Parameter ID="Type" Value="UINT" />
-      </Channel>
       <Channel ID="ACPi_SerialNumber">
-        <Filter Value="InverterInfo='off' AND IS_RUNTIME='1'" />
-        <Parameter ID="Ext" Value="/NOTCYCLIC" />
-        <Parameter ID="Address" Value="0x100C" Type="UDINT" />
-        <Parameter ID="Direction" Value="IN" />
-        <Parameter ID="Type" Value="UDINT" />
-      </Channel>
-      <Channel ID="ACPi_SerialNumber_cyc">
-        <Filter Value="InverterInfo='on' OR InverterInfo='cyc'" />
-        <Parameter ID="Name" Value="ACPi_SerialNumber" />
+        <Filter Value="InverterInfo='on'" />
         <Parameter ID="Address" Value="0x100C" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="UDINT" />
@@ -8109,6 +8168,13 @@
         <Parameter ID="Direction" Value="OUT" />
         <Parameter ID="Type" Value="BOOL" />
       </Channel>
+      <Channel ID="CMI_Output_Bool_01">
+        <Filter Value="packedCMI='unpacked' AND enableCMI='on'" />
+        <Parameter ID="Address" Value="0x812" Type="UDINT" />
+        <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="BOOL" />
+      </Channel>
       <Channel ID="CMI_Output_Bool_03">
         <Filter Value="packedCMI='unpacked' AND enableCMI='on'" />
         <Parameter ID="Address" Value="0x812" Type="UDINT" />
@@ -8236,9 +8302,9 @@
       </Channel>
       <Channel ID="Status01">
         <Filter Value="IS_RUNTIME='1' AND CounterEnable='on'" />
-        <Parameter ID="Address" Value="0x21" Type="UDINT" />
+        <Parameter ID="Address" Value="0x22" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
-        <Parameter ID="Type" Value="USINT" />
+        <Parameter ID="Type" Value="UINT" />
       </Channel>
       <Channel ID="EnableCounter01">
         <Filter Value="CounterEnable='on'" />
@@ -8295,15 +8361,15 @@
       </Channel>
       <Channel ID="OverflowCounter01">
         <Filter Value="CounterEnable='on' AND (CounterMode01='gate_rising_falling' OR CounterMode01='gate_falling_rising' OR CounterMode01='period_rising_rising' OR CounterMode01='period_falling_falling')" />
-        <Parameter ID="Address" Value="0x21" Type="UDINT" />
-        <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+        <Parameter ID="Address" Value="0x22" Type="UDINT" />
+        <Parameter ID="BitOffset" Value="11" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
       </Channel>
       <Channel ID="OverflowCounter02">
         <Filter Value="CounterEnable='on' AND NOT(CounterFrequency01='external') AND (CounterMode02='gate_rising_falling' OR CounterMode02='gate_falling_rising' OR CounterMode02='period_rising_rising' OR CounterMode02='period_falling_falling')" />
-        <Parameter ID="Address" Value="0x21" Type="UDINT" />
-        <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+        <Parameter ID="Address" Value="0x22" Type="UDINT" />
+        <Parameter ID="BitOffset" Value="12" Type="UDINT" />
         <Parameter ID="Direction" Value="IN" />
         <Parameter ID="Type" Value="BOOL" />
       </Channel>
@@ -9136,6 +9202,19 @@
         <Parameter ID="Type" Value="DATE_AND_TIME" />
         <Parameter ID="Diagnose" Value="/DIAG" />
       </Channel>
+    </Resource>
+  </Hardware>
+  <Hardware Family="4" ID="4PP065.IF10-1" Modno="45232" UseType="2">
+    <Parameter ID="CompatibleCpuCode" Value="4PP065.IF23-1" />
+    <Parameter ID="VendorId" Value="0x1677" Type="UDINT" />
+    <Parameter ID="NeededBus" Value="PP45BUS" />
+    <Resource ID="IF1">
+      <Parameter ID="PCIFuncNo" Value="0" Type="UDINT" />
+      <Parameter ID="ClockRate" Value="1843200" Type="UDINT" />
+      <Parameter ID="SupportedModes" Value="0x01" Type="UDINT" />
+      <Parameter ID="HandshakeLines" Value="0x180" Type="UDINT" />
+      <Parameter ID="HwDrv" Value="1" Type="UDINT" />
+      <Parameter ID="FifoSize" Value="16" Type="UDINT" />
     </Resource>
   </Hardware>
   <Hardware Family="4" ID="4PP065.0571-P74" Modno="43364" UseType="1">

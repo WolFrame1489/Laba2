@@ -1,67 +1,62 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _LIBRARIES_20211006164526_
-#define _LIBRARIES_20211006164526_
+#ifndef _LIBRARIES_20211022164728_
+#define _LIBRARIES_20211022164728_
 
 __asm__(".section \".plc\"");
 
 /* Used IEC files */
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/operator/operator.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/operator/operator.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/operator/operator.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/runtime/runtime.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/runtime/runtime.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/runtime/runtime.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10man/Acp10man.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10par/Acp10par.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/NcGlobal/NcGlobal.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/NcGlobal/NcGlobal.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/NcGlobal/NcGlobal.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10sdc/acp10sdc.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10sdc/acp10sdc.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Arnc0man/arnc0man.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/DataObj/DataObj.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/DataObj/DataObj.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/DataObj/DataObj.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsArLog/AsArLog.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsArLog/AsArLog.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsArLog/AsArLog.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsArProf/AsArProf.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsArProf/AsArProf.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsArProf/AsArProf.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsMem/AsMem.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsMem/AsMem.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsMem/AsMem.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/brsystem/brsystem.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/brsystem/brsystem.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/brsystem/brsystem.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10_MC/acp10_mc.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10_MC/acp10_mc.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/Acp10_MC/acp10_mc.var\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsBrStr/AsBrStr.fun\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsBrStr/AsBrStr.typ\\\" scope \\\"global\\\"\\n\"");
-__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsBrStr/AsBrStr.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/Runtime/runtime.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/Runtime/runtime.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/Runtime/runtime.var\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/X64Lib/X64Lib.typ\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/X64Lib/X64Lib.var\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/X64Lib/X64Lib.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/Operator/operator.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/Operator/operator.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/Operator/operator.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/asstring/asstring.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/asstring/asstring.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/asstring/asstring.var\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/Types.typ\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/Constants.var\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/GateCtrl.fun\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
+#ifdef _RUNTIME_EXPORT
+	__asm__(".ascii \"plcexport \\\"r_trig\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"f_trig\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"rf_trig\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"GetTime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SFCActionControl\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SFCAC2\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealTan\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealAtan\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealAsin\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealAcos\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealExp\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealLn\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealLog\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealExpt\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealAbs\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealSin\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealCos\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RealSqrt\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SFCAC3\\\" FUB\\n\"");
+#endif
+#ifdef _X64LIB_EXPORT
+	__asm__(".ascii \"plcexport \\\"FBX64Inverter\\\" FUB\\n\"");
+#endif
 #ifdef _OPERATOR_EXPORT
 	__asm__(".ascii \"plcexport \\\"SIZEOF\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"ADR\\\" FUN\\n\"");
@@ -104,59 +99,6 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/GateCtrl.fun\\\" scope 
 	__asm__(".ascii \"plcexport \\\"ATAN\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"EXPT\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"TRUNC\\\" FUN\\n\"");
-#endif
-#ifdef _RUNTIME_EXPORT
-	__asm__(".ascii \"plcexport \\\"r_trig\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"f_trig\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"rf_trig\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"GetTime\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"SFCActionControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"SFCAC2\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealTan\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealAtan\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealAsin\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealAcos\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealExp\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealLn\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealLog\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealExpt\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealAbs\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealSin\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealCos\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"RealSqrt\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"SFCAC3\\\" FUB\\n\"");
-#endif
-#ifdef _ASTIME_EXPORT
-	__asm__(".ascii \"plcexport \\\"DTExSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DTSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DTGetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"clock_ms\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTGetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTExSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DTStructureGetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DTStructureSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DTStructureExSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTStructureGetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTStructureSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTStructureExSetTime\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDT_TO_LocalDTStructure\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LocalDT_TO_UtcDTStructure\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"UtcDTStructure_TO_LocalDT\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LocalDTStructure_TO_UtcDT\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"ascTIMEStructure\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ascDTStructure\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ascTIME\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ascDT\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"TIMEStructure_TO_TIME\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"TIME_TO_TIMEStructure\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"DTStructure_TO_DT\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"DT_TO_DTStructure\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"DiffT\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"DiffDT\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"TimeDeviceGetInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DstGetInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DstGetInfoDT\\\" FUB\\n\"");
 #endif
 #ifdef _ASIECCON_EXPORT
 	__asm__(".ascii \"plcexport \\\"swapDT\\\" FUN\\n\"");
@@ -498,37 +440,37 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/GateCtrl.fun\\\" scope 
 	__asm__(".ascii \"plcexport \\\"WSTRING_TO_LREAL\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"WSTRING_TO_STRING\\\" FUN\\n\"");
 #endif
-#ifdef _NCGLOBAL_EXPORT
-	__asm__(".ascii \"plcexport \\\"nccnccom\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncda_dir\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncda_inf\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncda_id\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncda_wr\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncda_cr\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncaccess\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncalloc\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncaction\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"ncglobal_action\\\" FUN\\n\"");
-#endif
-#ifdef _DATAOBJ_EXPORT
-	__asm__(".ascii \"plcexport \\\"DatObjCreate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjWrite\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjRead\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjDelete\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjMove\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjCopy\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjChangeDate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjAttach\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DatObjDetach\\\" FUB\\n\"");
-#endif
-#ifdef _ASARLOG_EXPORT
-	__asm__(".ascii \"plcexport \\\"AsArLogCreate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsArLogDelete\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsArLogWrite\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsArLogRead\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsArLogClear\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsArLogGetInfo\\\" FUB\\n\"");
+#ifdef _ASTIME_EXPORT
+	__asm__(".ascii \"plcexport \\\"DTExSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DTSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DTGetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"clock_ms\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTGetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTExSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DTStructureGetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DTStructureSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DTStructureExSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTStructureGetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTStructureSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTStructureExSetTime\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDT_TO_LocalDTStructure\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LocalDT_TO_UtcDTStructure\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"UtcDTStructure_TO_LocalDT\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"LocalDTStructure_TO_UtcDT\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"ascTIMEStructure\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ascDTStructure\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ascTIME\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ascDT\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TIMEStructure_TO_TIME\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TIME_TO_TIMEStructure\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DTStructure_TO_DT\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DT_TO_DTStructure\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DiffT\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DiffDT\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TimeDeviceGetInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DstGetInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DstGetInfoDT\\\" FUB\\n\"");
 #endif
 #ifdef _SYS_LIB_EXPORT
 	__asm__(".ascii \"plcexport \\\"Byte2Bit\\\" FUB\\n\"");
@@ -613,234 +555,19 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/GateCtrl.fun\\\" scope 
 	__asm__(".ascii \"plcexport \\\"PV_setval\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"slMoList\\\" FUB\\n\"");
 #endif
-#ifdef _FILEIO_EXPORT
-	__asm__(".ascii \"plcexport \\\"FileCreate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileOpen\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileClose\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileRead\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileReadEx\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileWrite\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileWriteEx\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileRename\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileCopy\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileDelete\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileTruncate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirCreate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirOpen\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirClose\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirRead\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirReadEx\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirRename\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirCopy\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirDelete\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DirDeleteEx\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"SetAttributes\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"GetAttributes\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DevMemInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DevLink\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"DevUnlink\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"GetVolumeLabel\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"GetVolumeSerialNo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"FileIoGetSysError\\\" FUN\\n\"");
-#endif
-#ifdef _ASARPROF_EXPORT
-	__asm__(".ascii \"plcexport \\\"LogInstall\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogDeInstall\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogStateGet\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogArchCreate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogArchDelete\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogArchCopy\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogArchInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogStart\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogStop\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogEvent\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"LogIdleShow\\\" FUB\\n\"");
-#endif
-#ifdef _ASMEM_EXPORT
-	__asm__(".ascii \"plcexport \\\"AsMemPartCreate\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsMemPartDestroy\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsMemPartAlloc\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsMemPartAllocClear\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsMemPartRealloc\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsMemPartFree\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"AsMemPartInfo\\\" FUB\\n\"");
-#endif
-#ifdef _BRSYSTEM_EXPORT
-	__asm__(".ascii \"plcexport \\\"MEMInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MEMxInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"SysInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"RTInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"TARGETInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"HWInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"SysconfInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"SysconfSet\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"BatteryInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"EXCInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"ZYKVLenable\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"PMemGet\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"PMemPut\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"PMemSize\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"ARwinWindowsInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"ARwinEthWinInfo\\\" FUB\\n\"");
-#endif
-#ifdef _ACP10_MC_EXPORT
-	__asm__(".ascii \"plcexport \\\"MC_AbortTrigger\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_AutCommand\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_AutControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_AutoCamDwell\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_AxisErrorCollector\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_BrakeControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_BrakeOperation\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CalcCamFromPoints\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CalcCamFromSections\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CalcPointsFromCam\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CalcSectionsFromCam\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CamIn\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CamDwell\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CamTransition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CheckAutCompensation\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CheckEndlessPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CommandError\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ConfigPowerStageCheck\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CrossCutterControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CyclicRead\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CyclicReadDataInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_CyclicWrite\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_DigitalCamSwitch\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_DownloadCamProfileObj\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_DownloadCamProfileData\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_DownloadParSequ\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_EventMoveAbsolute\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_EventMoveAdditive\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_EventMoveVelocity\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GearIn\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GetCamMasterPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GetCamSlavePosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GetErrorText\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GetHardwareInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GetParIDTransferInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_HomeAcpEncoder\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitAutData\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitAutEvent\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitAutPar\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitAutState\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitAxisPar\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitAxisSubjectPar\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitCyclicRead\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitCyclicWrite\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitEndlessPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitEndlessPosAcpEnc\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitMasterParIDTransfer\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitModPos\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitParList\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitParSequ\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitParTabObj\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitReceiveNetworkData\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitReceiveNetworkEnc\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitReceiveParID\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_InitSendParID\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_JogVelocity\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_JogLimitPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_JogTargetPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_LimitLoad\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_LimitLoadCam\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_LoadAxisPar\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveAbsoluteTriggStop\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveAdditiveTriggStop\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveCyclicPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveCyclicPositionExt\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveCyclicVelocity\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveCyclicVelocityExt\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MoveVelocityTriggStop\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_NetTrace\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_NetworkInit\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_Offset\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_OffsetVelocity\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_OffsetZone\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_GetParIDInfo\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ParTrace\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ParTraceConfig\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_Phasing\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_MechPosDeviationComp\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_PowerMeter\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadAutPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadAxisError\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadCyclicPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadDriveStatus\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadNetTraceStatus\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadParID\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadParIDText\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadParList\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReadParTraceStatus\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ReceiveParIDOnPLC\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_ResetAutPar\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SaveAxisPar\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SaveCamProfileObj\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetHardwareInputs\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetupController\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetupFromParTabObj\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetupInductionMotor\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetupIsqRipple\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetupMotorPhasing\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_SetupSynchronMotor\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_Simulation\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_TouchProbe\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_VelocityControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_WriteParID\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_WriteParIDText\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_CamIn\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_CamOut\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_CamTableSelect\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_DigitalCamSwitch\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_GearIn\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_GearInPos\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_GearOut\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_Halt\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_Home\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_LimitLoad\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_MoveAbsolute\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_MoveAdditive\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_MoveVelocity\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_Phasing\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_Power\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadActualPosition\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadActualTorque\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadActualVelocity\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadAxisError\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadBoolParameter\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadDigitalInput\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadDigitalOutput\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadParameter\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_ReadStatus\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_Reset\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_SetOverride\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_Stop\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_TouchProbe\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_TorqueControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_BR_TorqueControl\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_WriteBoolParameter\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_WriteDigitalOutput\\\" FUB\\n\"");
-	__asm__(".ascii \"plcexport \\\"MC_WriteParameter\\\" FUB\\n\"");
-#endif
-#ifdef _ASBRSTR_EXPORT
-	__asm__(".ascii \"plcexport \\\"brsftoa\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsatof\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsatod\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsitoa\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsatoi\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsmemset\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsmemcpy\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsmemmove\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsmemcmp\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsstrcat\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsstrlen\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsstrcpy\\\" FUN\\n\"");
-	__asm__(".ascii \"plcexport \\\"brsstrcmp\\\" FUN\\n\"");
-#endif
-#ifdef _X64LIB_EXPORT
-	__asm__(".ascii \"plcexport \\\"FBX64Inverter\\\" FUB\\n\"");
+#ifdef _ASSTRING_EXPORT
+	__asm__(".ascii \"plcexport \\\"ftoa\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"atof\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"itoa\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"atoi\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memset\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memcpy\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memmove\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memcmp\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strcat\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strlen\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strcpy\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strcmp\\\" FUN\\n\"");
 #endif
 #ifdef _GATECTRL_EXPORT
 	__asm__(".ascii \"plcexport \\\"FBGate\\\" FUB\\n\"");
@@ -849,5 +576,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/GateCtrl.fun\\\" scope 
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20211006164526_ */
+#endif /* _LIBRARIES_20211022164728_ */
 

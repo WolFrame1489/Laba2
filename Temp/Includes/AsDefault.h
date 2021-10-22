@@ -7,24 +7,14 @@
 extern "C" 
 {
 #endif
-	#include <operator.h>
-	#include <runtime.h>
-	#include <Acp10par.h>
-	#include <NcGlobal.h>
-	#include <AsBrStr.h>
+	#include <Runtime.h>
+	#include <Operator.h>
+	#include <asstring.h>
 	#include <astime.h>
-	#include <Acp10man.h>
-	#include <DataObj.h>
-	#include <AsArLog.h>
 	#include <sys_lib.h>
-	#include <FileIO.h>
-	#include <AsArProf.h>
-	#include <AsMem.h>
-	#include <brsystem.h>
 	#include <AsIecCon.h>
-	#include <Acp10sdc.h>
-	#include <Arnc0man.h>
-	#include <Acp10_MC.h>
+	#include <X64Lib.h>
+	#include <GateCtrl.h>
 #ifdef __cplusplus
 };
 #endif

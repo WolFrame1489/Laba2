@@ -14,6 +14,16 @@ extern "C"
 #ifndef _BUR_PUBLIC
 #define _BUR_PUBLIC
 #endif
+#ifdef _SG4
+		#include "X64Lib.h"
+#endif
+#ifdef _SG3
+		#include "X64Lib.h"
+#endif
+#ifdef _SGC
+		#include "X64Lib.h"
+#endif
+
 /* Datatypes and datatypes of function blocks */
 typedef enum GateState
 {	ST_INIT = 0,
@@ -35,6 +45,7 @@ typedef struct FBGate
 	/* VAR (analog) */
 	enum GateState State;
 	unsigned char direction;
+	struct FBX64Inverter DriveBlk;
 	/* VAR_INPUT (digital) */
 	plcbit s0;
 	plcbit s1;

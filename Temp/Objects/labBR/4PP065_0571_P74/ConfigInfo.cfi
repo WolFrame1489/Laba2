@@ -2,28 +2,34 @@
 <?AutomationStudio Version="4.5.2.102"?>
 <ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
   <TaskClass
-    Name="Cyclic#1">
-    <Task
-      Name="ncsdcctrl"
-      Disable="false"
-      Source="ncsdcctrl"
-      Language="IEC">
-      <InternalFile
-        Path="A:\as\GANVO\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrlCyclic.st.var" />
-      <InternalFile
-        Path="A:\as\GANVO\Temp\Objects\labBR\4PP065_0571_P74\ncsdcctrl\ncsdcctrlInit.st.var" />
-      <File
-        Path="A:\as\GANVO\Logical\ncsdcctrl\ncsdcctrl.typ" />
-      <File
-        Path="A:\as\GANVO\Logical\ncsdcctrl\ncsdcctrl.var" />
-    </Task>
-  </TaskClass>
+    Name="Cyclic#1" />
   <TaskClass
     Name="Cyclic#2" />
   <TaskClass
     Name="Cyclic#3" />
   <TaskClass
-    Name="Cyclic#4" />
+    Name="Cyclic#4">
+    <Task
+      Name="DoorCtrl"
+      Disable="false"
+      Source="DoorCtrl"
+      Language="ANSIC">
+      <File
+        Path="A:\as\LRlab23i\Logical\DoorCtrl\Types.typ" />
+      <File
+        Path="A:\as\LRlab23i\Logical\DoorCtrl\Variables.var" />
+    </Task>
+    <Task
+      Name="LedCtrl"
+      Disable="false"
+      Source="LedCtrl"
+      Language="ANSIC">
+      <File
+        Path="A:\as\LRlab23i\Logical\LedCtrl\Types.typ" />
+      <File
+        Path="A:\as\LRlab23i\Logical\LedCtrl\Variables.var" />
+    </Task>
+  </TaskClass>
   <TaskClass
     Name="Cyclic#5" />
   <TaskClass
