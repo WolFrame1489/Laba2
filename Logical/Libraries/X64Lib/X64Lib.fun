@@ -17,4 +17,7 @@ FUNCTION_BLOCK FBX64Inverter (*X64 Acopos Inverter Control Lib*) (*$GROUP=User*)
 	VAR_OUTPUT
 		CMDD_Output : UINT;
 	END_VAR
+	VAR
+		sex : UINT;
+	END_VAR
 END_FUNCTION_BLOCK

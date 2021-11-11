@@ -814,15 +814,19 @@
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST5.DigitalInput02" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST5" DPName="DigitalInput02" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::DoorCtrl:DoorBlock.s0" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST5.DigitalInput03" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST5" DPName="DigitalInput03" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::DoorCtrl:DoorBlock.s1" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST5.DigitalInput04" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST5" DPName="DigitalInput04" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::DoorCtrl:DoorBlock.s2" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST5.DigitalInput05" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST5" DPName="DigitalInput05" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::DoorCtrl:DoorBlock.s3" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST5.DigitalInput06" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST5" DPName="DigitalInput06" Kind="io"/>
@@ -1366,6 +1370,7 @@
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST11.ETAD_Input" Type="UINT">
 <Prod Device="IF4.ST2.IF1.ST11" DPName="ETAD_Input" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::DoorCtrl:ETAD" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST11.ETI_Input" Type="UINT">
 <Prod Device="IF4.ST2.IF1.ST11" DPName="ETI_Input" Kind="io"/>
@@ -1407,12 +1412,14 @@
 <Prod Device="IF4.ST2.IF1.ST11" DPName="LFT_Input" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST11.CMDD_Output" Type="UINT">
+<Prod Device="TC#4-CPYDEV" DPName="::DoorCtrl:CMD" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST11" DPName="CMDD_Output" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST11.CMI_Output" Type="UINT">
 <Cons Device="IF4.ST2.IF1.ST11" DPName="CMI_Output" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST11.LFRD_Output" Type="INT">
+<Prod Device="TC#4-CPYDEV" DPName="::DoorCtrl:Speed" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST11" DPName="LFRD_Output" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST11.IOLR_Output_Bool_09" Type="BOOL">

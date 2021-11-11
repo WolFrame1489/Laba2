@@ -41,7 +41,7 @@ typedef enum GateState
 typedef struct FBGate
 {
 	/* VAR_OUTPUT (analog) */
-	unsigned long Speed;
+	signed short Speed;
 	/* VAR (analog) */
 	enum GateState State;
 	unsigned char direction;

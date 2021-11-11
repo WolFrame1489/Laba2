@@ -21,6 +21,8 @@ typedef struct FBX64Inverter
 	unsigned short ETAD_Input;
 	/* VAR_OUTPUT (analog) */
 	unsigned short CMDD_Output;
+	/* VAR (analog) */
+	unsigned short sex;
 	/* VAR_INPUT (digital) */
 	plcbit enable;
 } FBX64Inverter_typ;

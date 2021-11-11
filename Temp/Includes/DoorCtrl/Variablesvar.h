@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1634910366_4_
-#define _BUR_1634910366_4_
+#ifndef _BUR_1635338809_4_
+#define _BUR_1635338809_4_
 
 #include <bur/plctypes.h>
 
@@ -35,5 +35,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/GateCtrl/GateCtrl.fun\\\" scope 
 __asm__(".previous");
 
 
-#endif /* _BUR_1634910366_4_ */
+#endif /* _BUR_1635338809_4_ */
 

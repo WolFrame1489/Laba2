@@ -11,7 +11,7 @@
 		S1 : BOOL;
 		S2 : BOOL;
 		S3 : BOOL;
-		Speed : UDINT;
+		Speed : INT;
 	END_VAR
 	VAR
 		State : GateState;

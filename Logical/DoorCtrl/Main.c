@@ -13,6 +13,9 @@ void _INIT ProgramInit(void)
 
 void _CYCLIC ProgramCyclic(void)
 {
+	Speed = DoorBlock.Speed;
+	DoorBlock.DriveBlk.ETAD_Input = ETAD;
+	CMD = DoorBlock.DriveBlk.CMDD_Output;
 	if (Open == 1){
 		DoorBlock.direction = 1;
 	}

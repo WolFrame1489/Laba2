@@ -3,6 +3,6 @@
 <ProjectSettings xmlns="http://br-automation.co.at/AS/ProjectSettings">
   <ConfigurationManager ActiveConfigurationName="labBR" />
   <Deployment Value="ActiveCpu" />
-  <ExportProject ExportFilePath="C:\Users\T3485\Desktop\LR23i.zip" />
+  <ExportProject ExportFilePath="C:\Users\admin\Downloads\LABA1488228.zip" />
   <Print Footer="%cPage: %p" Header="%lProject: %n%c%x" />
 </ProjectSettings>

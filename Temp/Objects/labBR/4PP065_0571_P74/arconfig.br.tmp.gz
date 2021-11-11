@@ -3,15 +3,11 @@
 <IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
   <Module ID="$root" Hardware="4PP065.0571-P74">
     <Parameter ID="HardwareModuleName" Value="4PP065_0571_P74" />
-    <Parameter ID="ConfigurationID" Value="DriveControl_SampleText" />
     <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
     <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
     <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="on" />
     <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
-  </Module>
-  <Module ID="$root.IO" Hardware="4PP065.0571-P74">
-    <Parameter ID="ActivateOpc" Value="0" />
-    <Parameter ID="OpcServerName" Value="BR.OPC.Server_AR" />
   </Module>
   <Module ID="IF4" Hardware="4PP065.0571-P74">
     <Parameter ID="Operation" Value="EPL-V2" />
@@ -19,6 +15,7 @@
   </Module>
   <Module ID="IF4.PLK" Hardware="EPL-V2">
     <Parameter ID="EplInterfaceRedundant" Value="0" />
+    <Parameter ID="EplHostName" Value="br-automation" />
     <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
     <Parameter ID="Synchron" Value="on" />
     <Parameter ID="MuxPrescaler" Value="8" Type="UDINT" />
@@ -29,6 +26,7 @@
     <Parameter ID="OutputJustInTime" Value="off" />
     <Parameter ID="BasicEthernetInServiceMode" Value="off" />
     <Parameter ID="EplNatSubnet" Value="192.168.101.0" />
+    <Parameter ID="EPL_LossFrameTolerance" Value="-1" Type="DINT" />
     <Parameter ID="ApplSwDate" Value="0" Type="UDINT" />
     <Parameter ID="ApplSwTime" Value="0" Type="UDINT" />
     <Parameter ID="BusCycleTrigger" Value="auto" />
@@ -239,6 +237,7 @@
     <Parameter ID="HardwareModuleName" Value="X20BC0083" />
     <Parameter ID="Supervision" Value="on" />
     <Parameter ID="LinkSelectorInfo" Value="off" />
+    <Parameter ID="IPGateway" Value="240" Type="DINT" />
     <Parameter ID="Mode" Value="CN" />
     <Parameter ID="ResponseTimeout" Value="25" Type="UDINT" />
     <Parameter ID="CiR" Value="off" />
@@ -407,6 +406,7 @@
     <Parameter ID="FunctionModel" Value="Standard" />
     <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
     <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="Blackout" Value="off" />
     <Parameter ID="ErrorInfo" Value="on" />
     <Parameter ID="PLCopenInfo" Value="off" />
     <Parameter ID="SafeLogicID" Value="1" Type="UDINT" />
@@ -425,6 +425,7 @@
     <Parameter ID="FunctionModel" Value="Standard" />
     <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
     <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="Blackout" Value="off" />
     <Parameter ID="ErrorInfo" Value="on" />
     <Parameter ID="PLCopenInfo" Value="off" />
     <Parameter ID="SafeLogicID" Value="1" Type="UDINT" />
@@ -452,9 +453,9 @@
     <Parameter ID="HardwareModuleName" Value="8I64xxxxxxx.00x-1" />
   </Module>
   <Module ID="IF4.ST2.IF1.ST11.IO" Hardware="8I64xxxxxxx.00x-1">
-    <Parameter ID="FunctionModel" Value="MotionConfiguration" />
+    <Parameter ID="FunctionModel" Value="Standard" />
     <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
-    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Supervision" Value="on" />
     <Parameter ID="InverterInfo" Value="off" />
     <Parameter ID="enableETI" Value="on" />
     <Parameter ID="enableOTR" Value="on" />
@@ -472,14 +473,12 @@
     <Parameter ID="packedCMDD" Value="packed" />
     <Parameter ID="packedCMI" Value="packed" />
     <Parameter ID="LFRD_LFR_Filter" Value="LFRD_RFRD" />
-    <Parameter ID="SDC_Selection" Value="1" Type="INT" />
-    <Parameter ID="SDC_Mode" Value="1" Type="INT" />
-    <Parameter ID="SDCAct" Value="Yes" />
+    <Parameter ID="SDC_Mode" Value="0" Type="INT" />
+    <Parameter ID="SDCAct" Value="No" />
+    <Parameter ID="SDCAIOPrescaler" Value="0" Type="UINT" />
     <Parameter ID="CounterEnable" Value="off" />
     <Parameter ID="DigitalOutputMode01" Value="fastDO" />
     <Parameter ID="DownloadParameters" Value="onChange" />
-    <Parameter ID="ACC" Value="10" Type="UINT" />
-    <Parameter ID="DEC" Value="10" Type="UINT" />
     <Parameter ID="UNS" Value="220" Type="UINT" />
     <Parameter ID="NCR" Value="10" Type="UINT" />
     <Parameter ID="NSP" Value="890" Type="UINT" />
@@ -495,10 +494,16 @@
     <Parameter ID="FLOC" Value="16" Type="UINT" />
     <Parameter ID="COD" Value="64" Type="UINT" />
   </Module>
+  <Module ID="IF5" Hardware="4PP065.0571-P74">
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF5.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
   <Module ID="IF5.SITEMAN" Hardware="SITEMAN">
     <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
   </Module>
   <Module ID="SS1" Hardware="4PP065.IF10-1">
     <Parameter ID="HardwareModuleName" Value="4PP065_IF10-1" />
   </Module>
-</IOCFG>   
+</IOCFG>  

@@ -15,9 +15,9 @@
       Source="DoorCtrl"
       Language="ANSIC">
       <File
-        Path="A:\as\LRlab23i\Logical\DoorCtrl\Types.typ" />
+        Path="C:\Users\admin\Downloads\LABA1488\Logical\DoorCtrl\Types.typ" />
       <File
-        Path="A:\as\LRlab23i\Logical\DoorCtrl\Variables.var" />
+        Path="C:\Users\admin\Downloads\LABA1488\Logical\DoorCtrl\Variables.var" />
     </Task>
     <Task
       Name="LedCtrl"
@@ -25,9 +25,9 @@
       Source="LedCtrl"
       Language="ANSIC">
       <File
-        Path="A:\as\LRlab23i\Logical\LedCtrl\Types.typ" />
+        Path="C:\Users\admin\Downloads\LABA1488\Logical\LedCtrl\Types.typ" />
       <File
-        Path="A:\as\LRlab23i\Logical\LedCtrl\Variables.var" />
+        Path="C:\Users\admin\Downloads\LABA1488\Logical\LedCtrl\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

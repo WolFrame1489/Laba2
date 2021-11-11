@@ -29,23 +29,27 @@ void FBGate(struct FBGate* inst)
 			break;
 		case ST_OPEN: //ворота открыты 
 			inst->DriveBlk.enable = 0;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 0;
 			inst->S1 = 0;
 			inst->S2 = 0;
 			inst->S3 = 0;
 			inst->Speed = 0;
-			if (inst->direction == 0){
+			FBX64Inverter(&inst->DriveBlk);
+			if (inst->direction == 1){
 				inst->State = ST_ACC_POS;
 			}
 			break;
 		case ST_CLOSE: //Ворота закрыты 
 			inst->DriveBlk.enable = 0;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 1;
 			inst->S1 = 1;
 			inst->S2 = 1;
 			inst->S3 = 1;
 			inst->Speed = 0;
-			if (inst->direction == 1){
+			FBX64Inverter(&inst->DriveBlk);
+			if (inst->direction == 0){
 				inst->State = ST_NEG_ACC;
 			}
 			break;
@@ -56,15 +60,17 @@ void FBGate(struct FBGate* inst)
 			inst->S2 = 0;
 			inst->S3 = 0;
 			inst->Speed = 100;
+			FBX64Inverter(&inst->DriveBlk);
 			if (inst->s1){
 				inst->State = ST_POS;
 			}
-			if (inst->direction == 1) {
+			if (inst->direction == 0) {
 				inst->State = ST_NEG_ACC;
 			}	
 			break;
 		case ST_NEG_ACC://Ускорение в строну закрытия
 			inst->DriveBlk.enable = 1;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->Speed = -100;
 			inst->S0 = 1;
 			inst->S1 = 1;
@@ -76,6 +82,7 @@ void FBGate(struct FBGate* inst)
 			break;
 		case ST_NEG: //Двиежние в сторону закрытия 
 			inst->Speed = -300;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 1;
 			inst->S1 = 1;
 			inst->S2 = 0;
@@ -87,6 +94,7 @@ void FBGate(struct FBGate* inst)
 			break;
 		case ST_DEC_NEG: //Замедление ворот в сторону закрытия
 			inst->Speed = -100;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 1;
 			inst->S1 = 0;
 			inst->S2 = 0;
@@ -97,6 +105,7 @@ void FBGate(struct FBGate* inst)
 			break;
 		case ST_DEC_POS: //Замедление ворот в сторону закрытия
 			inst->S0 = 1;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->S1 = 1;
 			inst->S2 = 1;
 			inst->S3 = 0;
@@ -107,6 +116,7 @@ void FBGate(struct FBGate* inst)
 			break;
 		case ST_POS: //Ускорение ворот в строну открытия
 			inst->S0 = 1;
+			FBX64Inverter(&inst->DriveBlk);
 			inst->S1 = 1;
 			inst->S2 = 0;
 			inst->S3 = 0;
@@ -114,7 +124,7 @@ void FBGate(struct FBGate* inst)
 			if (inst->s2){
 				inst->State = ST_DEC_POS;
 			}
-			if (inst->direction == 1) {
+			if (inst->direction == 0) {
 				inst->State = ST_NEG;
 			}
 			break;

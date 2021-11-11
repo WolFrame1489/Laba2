@@ -1,40 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\main.c.o">
-    <BuildReason>Target "main.c.o" does not exist</BuildReason>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\libraries\gatectrl\fbgate.c" differs.
+</BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\main.c.o">
-    <BuildReason>Target "main.c.o" does not exist</BuildReason>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o" differs.
+</BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\_bur_pvdef.c.o">
-    <BuildReason>Target "_bur_pvdef.c.o" does not exist</BuildReason>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out" differs.
+</BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\_bur_pvdef.c.o">
-    <BuildReason>Target "_bur_pvdef.c.o" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\a.out">
-    <BuildReason>Target "a.out" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\a.out">
-    <BuildReason>Target "a.out" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\doorctrl.ox">
-    <BuildReason>Target "doorctrl.ox" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl.br">
-    <BuildReason>Target "doorctrl.br" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\ledctrl.ox">
-    <BuildReason>Target "ledctrl.ox" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl.br">
-    <BuildReason>Target "ledctrl.br" does not exist</BuildReason>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox" differs.
+</BuildReason>
   </Rule>
   <Rule ID="#cpu_tp.mak">
     <BuildReason>Rule is forced.</BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\binaries\labbr\4pp065_0571_p74\transfer.lst">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl.br" differs.
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br" differs.
 </BuildReason>
   </Rule>
 </BuildReasons>

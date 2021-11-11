@@ -1,63 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RuleSetOptions>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\iomap.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\iomap.iom" LastWriteTime="2021-10-22 16:18:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\pvmap.vvm" LastWriteTime="2021-10-22 16:18:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\channelconfiguration.xml" LastWriteTime="2021-10-22 16:46:10" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-10-22 16:43:48" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.sw" LastWriteTime="2021-10-22 16:46:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\iomap.iom" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\pvmap.vvm" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\channelconfiguration.xml" LastWriteTime="2021-10-27 12:47:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-11-10 15:09:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.sw" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\PvMap.vvm&quot; -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\iomap.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR.4PP065_0571_P74&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwac.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-10-22 16:43:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-11-10 15:09:38" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ashwac.br&quot; -L &quot;AsIecCon: V*, asstring: V*, astime: V*, GateCtrl: V*, Operator: V*, Runtime: V*, sys_lib: V*, X64Lib: V*&quot; -c &quot;labBR&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -M IA32 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; -T SG4 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sysconf.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-10-22 16:43:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-11-10 15:09:38" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -c &quot;labBR&quot; -sysconf -S &quot;4PP065_0571_P74&quot; -F 1.6 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\sysconf.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asfw.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-10-22 16:43:48" />
-    <Prerequisite ID="a:\as\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-11-10 15:09:38" />
+    <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\asfw.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; -zip -s &quot;labBR&quot; -firmware -F 1.6 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwd.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-10-22 16:43:48" />
-    <Prerequisite ID="a:\as\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-11-10 15:09:38" />
+    <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ashwd.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; -zip -s &quot;labBR&quot; -hwd -F 1.6 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arconfig.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\iomap.iom" LastWriteTime="2021-10-22 16:18:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-10-22 16:43:48" />
-    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -arconfig -C &quot;/RT=1000 /AM=* /SDT=5 /DAIP=10.1.1.13 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=2&quot; -c &quot;labBR&quot; -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -F 1.6 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; " />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\iomap.iom" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\hardware.hw" LastWriteTime="2021-11-10 15:09:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\labBR\Hardware.hw&quot;  -arconfig -C &quot;/RT=1000 /AM=* /SDT=5 /DAIP=10.0.1.10 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;labBR&quot; -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -F 1.6 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;labBR&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\udbdef.br">
-    <Prerequisite ID="a:\as\as45\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
-    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS45\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\udbdef.br&quot; &gt; nul" />
+    <Prerequisite ID="c:\brautomation\as45\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\udbdef.br&quot; &gt; nul" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.imx">
-    <Prerequisite ID="a:\as\as45\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2018-11-12 17:25:24" />
-    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.imx&quot; -c &quot;A:\as\AS45\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;A:\as\AS\System\D0452&quot; &quot;A:\as\AS45\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <Prerequisite ID="c:\brautomation\as45\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\D0452&quot; &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.s18d">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.imx" LastWriteTime="2021-10-22 16:46:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.imx" LastWriteTime="2021-10-27 12:46:58" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.s18d&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.s18d" LastWriteTime="2021-10-22 16:46:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata\tcdata.s18d" LastWriteTime="2021-11-10 15:06:36" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\TCData.br&quot; -t TextModule" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\role.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\accessandsecurity\userrolesystem\role.role" LastWriteTime="2021-10-22 16:18:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\accessandsecurity\userrolesystem\role.role" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Role.br&quot; -zip -B D4.52 -F 1.6 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\user.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\accessandsecurity\userrolesystem\user.user" LastWriteTime="2021-10-22 16:18:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\accessandsecurity\userrolesystem\user.user" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\User.br&quot; -zip -B D4.52 -F 1.6 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;labBR&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\doorctrl.ox" LastWriteTime="2021-10-22 16:47:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.per" LastWriteTime="2021-10-22 16:18:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\doorctrl.ox" LastWriteTime="2021-11-10 15:35:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.per" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\DoorCtrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -r Cyclic4 -p 2 -s &quot;DoorCtrl&quot; -L &quot;AsIecCon: V*, asstring: V*, astime: V*, GateCtrl: V*, Operator: V*, Runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
     <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
     <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
@@ -65,28 +72,54 @@
     <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\doorctrl.ox">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\a.out" LastWriteTime="2021-10-22 16:47:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\a.out" LastWriteTime="2021-11-10 15:35:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\DoorCtrl.ox&quot; -T SG4 -r Cyclic4 -G V4.1.2  -B D4.52 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\a.out">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\main.c.o" LastWriteTime="2021-10-22 16:47:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\_bur_pvdef.c.o" LastWriteTime="2021-10-22 16:47:28" />
-    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\Main.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\main.c.o" LastWriteTime="2021-11-10 15:35:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\_bur_pvdef.c.o" LastWriteTime="2021-11-10 15:35:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\Main.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\main.c.o">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\main.c" LastWriteTime="2021-10-22 16:24:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\main.c" LastWriteTime="2021-11-10 15:35:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\DoorCtrl\Main.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\Main.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;DoorCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\DoorCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\DoorCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
     <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\_bur_pvdef.c.o">
-    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\main.c.o" LastWriteTime="2021-10-22 16:47:28" />
-    <CommandLine Parameter="&quot;A:\as\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;DoorCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\DoorCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\DoorCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl\main.c.o" LastWriteTime="2021-11-10 15:35:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\doorctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\DoorCtrl\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;DoorCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\DoorCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\DoorCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
     <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\ledctrl.ox" LastWriteTime="2021-10-22 16:47:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.per" LastWriteTime="2021-10-22 16:18:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\ledctrl.ox" LastWriteTime="2021-11-10 15:06:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.per" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\LedCtrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -r Cyclic4 -p 3 -s &quot;LedCtrl&quot; -L &quot;AsIecCon: V*, asstring: V*, astime: V*, GateCtrl: V*, Operator: V*, Runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
     <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
     <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
@@ -94,112 +127,124 @@
     <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\ledctrl.ox">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\a.out" LastWriteTime="2021-10-22 16:47:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\a.out" LastWriteTime="2021-11-10 15:06:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\LedCtrl.ox&quot; -T SG4 -r Cyclic4 -G V4.1.2  -B D4.52 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\a.out">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\main.c.o" LastWriteTime="2021-10-22 16:47:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\_bur_pvdef.c.o" LastWriteTime="2021-10-22 16:47:28" />
-    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\Main.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\main.c.o" LastWriteTime="2021-11-10 15:06:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\_bur_pvdef.c.o" LastWriteTime="2021-11-10 15:06:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\Main.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\main.c.o">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\main.c" LastWriteTime="2021-10-22 16:24:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\main.c" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\LedCtrl\Main.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\Main.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;LedCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\LedCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\LedCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
     <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\_bur_pvdef.c.o">
-    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\main.c.o" LastWriteTime="2021-10-22 16:47:28" />
-    <CommandLine Parameter="&quot;A:\as\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;LedCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\LedCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\LedCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl\main.c.o" LastWriteTime="2021-11-10 15:06:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\ledctrl\variables.var" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\LedCtrl\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;LedCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\LedCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\LedCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
     <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sys_lib.br">
-    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\sys_lib.br" LastWriteTime="2018-12-06 02:00:52" />
-    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\sys_lib.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\sys_lib.br&quot; &gt; nul" />
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\sys_lib.br" LastWriteTime="2018-12-06 02:00:52" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\sys_lib.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\sys_lib.br&quot; &gt; nul" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\runtime.br">
-    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\runtime.br" LastWriteTime="2018-12-06 02:00:52" />
-    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\runtime.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\runtime.br&quot; &gt; nul" />
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\runtime.br" LastWriteTime="2018-12-06 02:00:52" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\runtime.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\runtime.br&quot; &gt; nul" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asstring.br">
-    <Prerequisite ID="a:\as\as\system\d0452\sg4\ia32\asstring.br" LastWriteTime="2018-12-06 02:00:48" />
-    <CommandLine Parameter="/c copy /B /Y &quot;A:\as\AS\System\D0452\SG4\IA32\asstring.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\asstring.br&quot; &gt; nul" />
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\asstring.br" LastWriteTime="2018-12-06 02:00:48" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\asstring.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\asstring.br&quot; &gt; nul" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox" LastWriteTime="2021-10-22 16:47:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\ansic.lby" LastWriteTime="2021-10-22 16:46:36" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-10-22 16:23:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox" LastWriteTime="2021-11-10 16:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\ansic.lby" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\GateCtrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -d &quot;X64Lib: V* - V*&quot; -r Library -s &quot;Libraries.GateCtrl&quot; -L &quot;AsIecCon: V*, asstring: V*, astime: V*, GateCtrl: V*, Operator: V*, Runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\gatectrl.ox">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out" LastWriteTime="2021-10-22 16:47:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-10-22 16:23:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out" LastWriteTime="2021-11-10 16:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\GateCtrl.ox&quot; -T SG4 -r Library -G V4.1.2  -B D4.52 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\a.out">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o" LastWriteTime="2021-10-22 16:47:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-10-22 16:23:28" />
-    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\FBGate.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o" LastWriteTime="2021-11-10 16:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\gatectrl.fun" LastWriteTime="2021-11-10 15:35:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\types.typ" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\FBGate.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl\fbgate.c.o">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\fbgate.c" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\gatectrl.h" LastWriteTime="2021-10-22 16:47:04" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\x64lib.h" LastWriteTime="2021-10-22 16:46:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\gatectrl\fbgate.c" LastWriteTime="2021-11-10 16:11:02" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\gatectrl.h" LastWriteTime="2021-11-10 15:35:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\x64lib.h" LastWriteTime="2021-11-10 15:08:14" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl\FBGate.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\GateCtrl\FBGate.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Libraries.GateCtrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\GateCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\GateCtrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -D _GATECTRL_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\x64lib.ox" LastWriteTime="2021-10-22 16:46:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\ansic.lby" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-10-22 16:23:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\x64lib.ox" LastWriteTime="2021-11-10 16:03:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\ansic.lby" LastWriteTime="2021-10-27 11:36:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\X64Lib.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\labBR\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -r Library -s &quot;Libraries.X64Lib&quot; -L &quot;AsIecCon: V*, asstring: V*, astime: V*, GateCtrl: V*, Operator: V*, Runtime: V*, sys_lib: V*, X64Lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\x64lib.ox">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\a.out" LastWriteTime="2021-10-22 16:46:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-10-22 16:23:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\a.out" LastWriteTime="2021-11-10 16:03:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\X64Lib.ox&quot; -T SG4 -r Library -G V4.1.2  -B D4.52 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\a.out">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\fbx64inverter.c.o" LastWriteTime="2021-10-22 16:46:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-10-22 16:23:28" />
-    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\FBX64Inverter.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,A:\as\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\fbx64inverter.c.o" LastWriteTime="2021-11-10 16:03:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\x64lib.fun" LastWriteTime="2021-11-10 15:08:10" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\FBX64Inverter.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libX64Lib.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\labBR\4PP065_0571_P74\libGateCtrl.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; -specs=I386specs_brelf" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib\fbx64inverter.c.o">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\fbx64inverter.c" LastWriteTime="2021-10-22 16:23:28" />
-    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="a:\as\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\x64lib.h" LastWriteTime="2021-10-22 16:46:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\x64lib\fbx64inverter.c" LastWriteTime="2021-11-10 16:03:52" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\x64lib.h" LastWriteTime="2021-11-10 15:08:14" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib\FBX64Inverter.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\X64Lib\FBX64Inverter.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Libraries.X64Lib&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\X64Lib&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\X64Lib&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\Libraries.h&quot; -D _X64LIB_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
   </Rule>
   <Rule ID="#cpu_tp.mak">
     <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\labBR\4PP065_0571_P74\#cpu_tp.mak&quot; -k" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\binaries\labbr\4pp065_0571_p74\transfer.lst">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\iomap.br" LastWriteTime="2021-10-22 16:46:10" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwac.br" LastWriteTime="2021-10-22 16:46:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sysconf.br" LastWriteTime="2021-10-22 16:46:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asfw.br" LastWriteTime="2021-10-22 16:46:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwd.br" LastWriteTime="2021-10-22 16:46:10" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arconfig.br" LastWriteTime="2021-10-22 16:46:10" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\udbdef.br" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata.br" LastWriteTime="2021-10-22 16:46:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\role.br" LastWriteTime="2021-10-22 16:18:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\user.br" LastWriteTime="2021-10-22 16:46:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl.br" LastWriteTime="2021-10-22 16:47:28" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl.br" LastWriteTime="2021-10-22 16:47:28" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\iomap.br" LastWriteTime="2021-10-27 12:47:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwac.br" LastWriteTime="2021-10-27 12:46:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sysconf.br" LastWriteTime="2021-10-27 12:46:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asfw.br" LastWriteTime="2021-10-27 12:46:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ashwd.br" LastWriteTime="2021-10-27 12:46:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\arconfig.br" LastWriteTime="2021-10-27 12:47:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\udbdef.br" LastWriteTime="2018-11-12 14:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\tcdata.br" LastWriteTime="2021-11-10 15:06:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\role.br" LastWriteTime="2021-10-27 12:46:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\user.br" LastWriteTime="2021-10-27 12:46:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\doorctrl.br" LastWriteTime="2021-11-10 15:36:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\ledctrl.br" LastWriteTime="2021-11-10 15:06:32" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\sys_lib.br" LastWriteTime="2018-12-06 02:00:52" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\runtime.br" LastWriteTime="2018-12-06 02:00:52" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\asstring.br" LastWriteTime="2018-12-06 02:00:48" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br" LastWriteTime="2021-10-22 16:47:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib.br" LastWriteTime="2021-10-22 16:46:06" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.sw" LastWriteTime="2021-10-22 16:46:04" />
-    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\DriveControl.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;labBR&quot; -i &quot;A:\as\AS45&quot; -S &quot;4PP065_0571_P74&quot; -A &quot;PP065&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=* /SDT=5 /DAIP=10.1.1.13 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=2&quot; -M IA32 -T SG4" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\gatectrl.br" LastWriteTime="2021-11-10 16:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\labbr\4pp065_0571_p74\x64lib.br" LastWriteTime="2021-11-10 16:03:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\labbr\4pp065_0571_p74\cpu.sw" LastWriteTime="2021-10-27 11:36:12" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\DriveControl.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;labBR&quot; -i &quot;C:\BrAutomation\AS45&quot; -S &quot;4PP065_0571_P74&quot; -A &quot;PP065&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\labBR\4PP065_0571_P74\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=* /SDT=5 /DAIP=10.0.1.10 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />
   </Rule>
 </RuleSetOptions>

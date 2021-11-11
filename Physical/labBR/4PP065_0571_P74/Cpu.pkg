@@ -17,6 +17,5 @@
     <DefaultTargetMemory Tasks="UserROM" />
     <Vc FirmwareVersion="V4.25.0" />
     <Safety SafetyRelease="1.6" />
-    <OnlineConfiguration Name="4PP065.0571-P74" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=2" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=10.1.1.13 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
   </Configuration>
 </Cpu>
