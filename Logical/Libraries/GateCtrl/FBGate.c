@@ -12,14 +12,14 @@
 void FBGate(struct FBGate* inst)
 {
 	switch (inst->State) {
-		case ST_INIT: //Èíèöèàëèçàöèÿ ïàðàìåòðîâ è îæèäàíèå âêëþ÷åíèÿ ÷àñòîòíîãî ïðåîáðàçîâàòåëÿ
+		case ST_INIT: //ÃˆÃ­Ã¨Ã¶Ã¨Ã Ã«Ã¨Ã§Ã Ã¶Ã¨Ã¿ Ã¯Ã Ã°Ã Ã¬Ã¥Ã²Ã°Ã®Ã¢ Ã¨ Ã®Ã¦Ã¨Ã¤Ã Ã­Ã¨Ã¥ Ã¢ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¿ Ã·Ã Ã±Ã²Ã®Ã²Ã­Ã®Ã£Ã® Ã¯Ã°Ã¥Ã®Ã¡Ã°Ã Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¿
 			inst->State = ST_UNKNOWN;
 			inst->S0 = 0;
 			inst->S1 = 0;
 			inst->S2 = 0;
 			inst->S3 = 0;
 			break;
-		case ST_UNKNOWN: //Âîðîòà â íåèçâåñòíîì ïîëîæåíèè
+		case ST_UNKNOWN: //Ã‚Ã®Ã°Ã®Ã²Ã  Ã¢ Ã­Ã¥Ã¨Ã§Ã¢Ã¥Ã±Ã²Ã­Ã®Ã¬ Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¨
 			if ((inst->direction == 0) && (inst->s0 == 0)){
 			inst->State = ST_OPEN;
 			}
@@ -27,7 +27,7 @@ void FBGate(struct FBGate* inst)
 				inst->State = ST_CLOSE;
 			}
 			break;
-		case ST_OPEN: //âîðîòà îòêðûòû 
+		case ST_OPEN: //Ã¢Ã®Ã°Ã®Ã²Ã  Ã®Ã²ÃªÃ°Ã»Ã²Ã» 
 			inst->DriveBlk.enable = 0;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 0;
@@ -40,7 +40,7 @@ void FBGate(struct FBGate* inst)
 				inst->State = ST_ACC_POS;
 			}
 			break;
-		case ST_CLOSE: //Âîðîòà çàêðûòû 
+		case ST_CLOSE: //Ã‚Ã®Ã°Ã®Ã²Ã  Ã§Ã ÃªÃ°Ã»Ã²Ã» 
 			inst->DriveBlk.enable = 0;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 1;
@@ -53,7 +53,7 @@ void FBGate(struct FBGate* inst)
 				inst->State = ST_NEG_ACC;
 			}
 			break;
-		case ST_ACC_POS: //Óñêîðåíèå âîðîò â ñòðîíó îòêðûòèÿ
+		case ST_ACC_POS: //Ã“Ã±ÃªÃ®Ã°Ã¥Ã­Ã¨Ã¥ Ã¢Ã®Ã°Ã®Ã² Ã¢ Ã±Ã²Ã°Ã®Ã­Ã³ Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿
 			inst->DriveBlk.enable = 1;
 			inst->S0 = 1;
 			inst->S1 = 0;
@@ -68,7 +68,7 @@ void FBGate(struct FBGate* inst)
 				inst->State = ST_NEG_ACC;
 			}	
 			break;
-		case ST_NEG_ACC://Óñêîðåíèå â ñòðîíó çàêðûòèÿ
+		case ST_NEG_ACC://Ã“Ã±ÃªÃ®Ã°Ã¥Ã­Ã¨Ã¥ Ã¢ Ã±Ã²Ã°Ã®Ã­Ã³ Ã§Ã ÃªÃ°Ã»Ã²Ã¨Ã¿
 			inst->DriveBlk.enable = 1;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->Speed = -100;
@@ -76,34 +76,34 @@ void FBGate(struct FBGate* inst)
 			inst->S1 = 1;
 			inst->S2 = 1;
 			inst->S3 = 0;
-			if (inst->s2){
+			if (!inst->s2){
 				inst->State = ST_NEG;
 			}
 			break;
-		case ST_NEG: //Äâèåæíèå â ñòîðîíó çàêðûòèÿ 
+		case ST_NEG: //Ã„Ã¢Ã¨Ã¥Ã¦Ã­Ã¨Ã¥ Ã¢ Ã±Ã²Ã®Ã°Ã®Ã­Ã³ Ã§Ã ÃªÃ°Ã»Ã²Ã¨Ã¿ 
 			inst->Speed = -300;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 1;
 			inst->S1 = 1;
 			inst->S2 = 0;
 			inst->S3 = 0;
-			if (inst->s1){
+			if (!inst->s1){
 				inst->State = ST_DEC_NEG;
 			}
 			
 			break;
-		case ST_DEC_NEG: //Çàìåäëåíèå âîðîò â ñòîðîíó çàêðûòèÿ
+		case ST_DEC_NEG: //Ã‡Ã Ã¬Ã¥Ã¤Ã«Ã¥Ã­Ã¨Ã¥ Ã¢Ã®Ã°Ã®Ã² Ã¢ Ã±Ã²Ã®Ã°Ã®Ã­Ã³ Ã§Ã ÃªÃ°Ã»Ã²Ã¨Ã¿
 			inst->Speed = -100;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->S0 = 1;
 			inst->S1 = 0;
 			inst->S2 = 0;
 			inst->S3 = 0;
-			if (inst->s0){
+			if (!inst->s0){
 				inst->State = ST_OPEN;
 			}
 			break;
-		case ST_DEC_POS: //Çàìåäëåíèå âîðîò â ñòîðîíó çàêðûòèÿ
+		case ST_DEC_POS: //Ã‡Ã Ã¬Ã¥Ã¤Ã«Ã¥Ã­Ã¨Ã¥ Ã¢Ã®Ã°Ã®Ã² Ã¢ Ã±Ã²Ã®Ã°Ã®Ã­Ã³ Ã§Ã ÃªÃ°Ã»Ã²Ã¨Ã¿
 			inst->S0 = 1;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->S1 = 1;
@@ -114,7 +114,7 @@ void FBGate(struct FBGate* inst)
 				inst->State = ST_CLOSE;
 			}
 			break;
-		case ST_POS: //Óñêîðåíèå âîðîò â ñòðîíó îòêðûòèÿ
+		case ST_POS: //Ã“Ã±ÃªÃ®Ã°Ã¥Ã­Ã¨Ã¥ Ã¢Ã®Ã°Ã®Ã² Ã¢ Ã±Ã²Ã°Ã®Ã­Ã³ Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿
 			inst->S0 = 1;
 			FBX64Inverter(&inst->DriveBlk);
 			inst->S1 = 1;
